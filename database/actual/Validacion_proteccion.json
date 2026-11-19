@@ -1,0 +1,8 @@
+{
+  "prueba": "Rechazo de instalación sobre base existente",
+  "correcta": true,
+  "codigoSalidaSqlcmd": 1,
+  "objetosModificados": false,
+  "huellaAntes": "7317C8313AFBB89A1AD59D613BC202EE74F96C2C75F3FA033B82E266737B8D54",
+  "huellaDespues": "7317C8313AFBB89A1AD59D613BC202EE74F96C2C75F3FA033B82E266737B8D54"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "archivo": "00_Instalacion_completa.sql",
+    "errores": 0,
+    "lotes": 184
+  },
+  {
+    "archivo": "01_Base_y_esquemas.sql",
+    "errores": 0,
+    "lotes": 8
+  },
+  {
+    "archivo": "02_Tipos_tabla.sql",
+    "errores": 0,
+    "lotes": 3
+  },
+  {
+    "archivo": "03_Tablas_y_restricciones.sql",
+    "errores": 0,
+    "lotes": 28
+  },
+  {
+    "archivo": "04_Indices.sql",
+    "errores": 0,
+    "lotes": 25
+  },
+  {
+    "archivo": "05_Claves_foraneas.sql",
+    "errores": 0,
+    "lotes": 33
+  },
+  {
+    "archivo": "06_Vistas_y_funciones.sql",
+    "errores": 0,
+    "lotes": 18
+  },
+  {
+    "archivo": "07_Procedimientos.sql",
+    "errores": 0,
+    "lotes": 26
+  },
+  {
+    "archivo": "08_Triggers.sql",
+    "errores": 0,
+    "lotes": 38
+  },
+  {
+    "archivo": "09_Seguridad_sin_credenciales.sql",
+    "errores": 0,
+    "lotes": 5
+  }
+]

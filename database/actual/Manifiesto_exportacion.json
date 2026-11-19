@@ -1,0 +1,63 @@
+{
+  "base": "Bd_SistemaHorarios",
+  "esquemas": [
+    "App",
+    "Aud",
+    "Rep"
+  ],
+  "solo_estructura": true,
+  "autenticacion_extraccion": "Windows",
+  "objetos": {
+    "tablas": 26,
+    "tipos_tabla": 1,
+    "vistas": 8,
+    "procedimientos": 12,
+    "triggers": 18,
+    "claves_foraneas": 31,
+    "checks": 39,
+    "defaults": 25,
+    "indices_incluye_pk_unique": 66
+  },
+  "archivos": [
+    {
+      "archivo": "00_Instalacion_completa.sql",
+      "sha256": "d5b774575ec9a10c81295f27e2e47f662c546683e883eec93bd818480d21e538"
+    },
+    {
+      "archivo": "01_Base_y_esquemas.sql",
+      "sha256": "d5c8348eb5196779684c65d1a3e8662a365d72e57f8a2b7691ebca34457eb064"
+    },
+    {
+      "archivo": "02_Tipos_tabla.sql",
+      "sha256": "23339541305523fd6bc56dd9b3a112a988ddc365fcaa079adddedca9700a65e7"
+    },
+    {
+      "archivo": "03_Tablas_y_restricciones.sql",
+      "sha256": "566a45def5301cc753ffdc27eea4698e9d8093838b98c0267a7770f3cabdfa58"
+    },
+    {
+      "archivo": "04_Indices.sql",
+      "sha256": "37e28461db26e39bdaf67ea8e615c759c6ed2db86e59b9c6a488d7983bfc601a"
+    },
+    {
+      "archivo": "05_Claves_foraneas.sql",
+      "sha256": "a69b9adac3da5ac2fcafab49c20a876b47acf4554c181a117d0e0263ad971d32"
+    },
+    {
+      "archivo": "06_Vistas_y_funciones.sql",
+      "sha256": "bacfd12fdfd48e3cfcb42a488e27d01526a7e20f27198ba3bf07931b8a517b29"
+    },
+    {
+      "archivo": "07_Procedimientos.sql",
+      "sha256": "5c9f68f733b6851be828332e4a4833ea173ebaf55f4677ba149389ff482ca51b"
+    },
+    {
+      "archivo": "08_Triggers.sql",
+      "sha256": "456b084d2e4ee0fe434125783b39b0bd0f0443356917c09a4661f95c37e6e3f5"
+    },
+    {
+      "archivo": "09_Seguridad_sin_credenciales.sql",
+      "sha256": "827c02573ba7a10ad708c91b865a255d7053b58e8b16652cd79120d784ab37c8"
+    }
+  ]
+}

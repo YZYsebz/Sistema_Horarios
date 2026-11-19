@@ -99,7 +99,9 @@ sqlcmd -S 'lpc:LAPTOPMASEB\DBA_TOPICOS' -E -C -I -b -Q 'SELECT @@SERVERNAME;'
 
 El prefijo `lpc:` selecciona memoria compartida local. La aplicación usa el login separado **Usr_SistemaHorarios**, miembro de **Rol_AppSistemaHorarios**, con los permisos runtime definidos en el diseño; no utiliza la identidad DBA Windows. La instancia comprobada admite autenticación mixta.
 
-Si restaura el proyecto **en una instancia nueva sin la estructura**, ejecute primero los scripts `database/baseline/01` a `11`, en orden, con una identidad de despliegue autorizada. Los archivos `baseline/12` y `baseline/13` son fixtures antiguos archivados; para los nuevos datos use exclusivamente la secuencia siguiente. En una base con datos propios, revise primero la compatibilidad de la migración; esta aborta ante controles incompatibles.
+Para crear la estructura vigente en una instancia nueva, dispone del [script SQL completo y los objetos exportados](database/actual/README.md), con su inventario, verificaciones y guía de instalación. La carpeta [database](database/README.md) reúne también los datos de prueba y las validaciones.
+
+Como alternativa al script completo, puede ejecutar los scripts `database/baseline/01` a `11`, en orden, con una identidad de despliegue autorizada, y aplicar la secuencia siguiente. Los archivos `baseline/12` y `baseline/13` son fixtures antiguos archivados. No ejecute ambas rutas de creación sobre la misma base. En una base con datos propios, revise primero la compatibilidad de la migración; esta aborta ante controles incompatibles.
 
 ```powershell
 . .\tools\Use-ProjectEnvironment.ps1
