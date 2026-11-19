@@ -1,0 +1,14 @@
+$taskRoot=Split-Path $PSScriptRoot -Parent
+$env:SISTEMA_HORARIOS_ROOT=$taskRoot
+$env:DOTNET_ROOT=Join-Path $taskRoot '.tools/dotnet'
+$env:DOTNET_CLI_HOME=Join-Path $taskRoot '.cache/dotnet-home'
+$env:NUGET_PACKAGES=Join-Path $taskRoot '.cache/nuget'
+$env:NUGET_HTTP_CACHE_PATH=Join-Path $taskRoot '.cache/nuget-http'
+$env:DOTNET_GENERATE_ASPNET_CERTIFICATE='false'
+$env:DOTNET_CLI_TELEMETRY_OPTOUT='1'
+$env:DOTNET_NOLOGO='1'
+$env:TEMP=Join-Path $taskRoot '.cache/tmp'
+$env:TMP=$env:TEMP
+$env:npm_config_cache=Join-Path $taskRoot '.cache/npm'
+$env:ASPNETCORE_ENVIRONMENT='Development'
+$env:Path=(Join-Path $taskRoot '.tools/dotnet')+[IO.Path]::PathSeparator+$env:Path

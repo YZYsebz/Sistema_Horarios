@@ -1,0 +1,61 @@
+{
+  "fecha": "2026-11-17",
+  "base": "BASE DE DATOS VALIDADA",
+  "conteos": [
+    {
+      "cObjeto": "Usuarios",
+      "nRegistros": 101,
+      "nMinimo": 100
+    },
+    {
+      "cObjeto": "Estudiantes",
+      "nRegistros": 50,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Docentes",
+      "nRegistros": 50,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Grupos",
+      "nRegistros": 64,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Sesiones",
+      "nRegistros": 161,
+      "nMinimo": 100
+    },
+    {
+      "cObjeto": "Historial",
+      "nRegistros": 1457,
+      "nMinimo": 300
+    },
+    {
+      "cObjeto": "Horarios",
+      "nRegistros": 52,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Detalle",
+      "nRegistros": 210,
+      "nMinimo": 200
+    },
+    {
+      "cObjeto": "Auditoría",
+      "nRegistros": 111,
+      "nMinimo": 50
+    }
+  ],
+  "inconsistencias": 0.0,
+  "xUnitAprobadas": 34,
+  "vitestAprobadas": 5,
+  "integracionAprobadas": 52,
+  "integracionFallos": 0,
+  "casosSqlAprobados": 20,
+  "consultasConsistencia": 18,
+  "arranqueEntregableVerificado": true,
+  "flujoNavegadorVerificado": "Login, seis materias, 26 créditos, generación, guardado y selección; escritorio y móvil",
+  "capturaExportada": false
+}

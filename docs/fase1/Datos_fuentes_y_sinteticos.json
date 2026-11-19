@@ -1,0 +1,2883 @@
+{
+  "reticula": "ISIC-2010-224",
+  "especialidad": "ISIE-COE-2024-02",
+  "materias": [
+    {
+      "semestre": 1,
+      "clave": "ACF-0901",
+      "nombre": "Cálculo Diferencial",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 1,
+      "clave": "AEF-1041",
+      "nombre": "Matemáticas Discretas",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 1,
+      "clave": "AED-1285",
+      "nombre": "Fundamentos de Programación",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 1,
+      "clave": "SCH-1024",
+      "nombre": "Taller de Administración",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 1,
+      "clave": "ACC-0906",
+      "nombre": "Fundamentos de Investigación",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 1,
+      "clave": "ACA-0907",
+      "nombre": "Taller de Ética",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "ACF-0902",
+      "nombre": "Cálculo Integral",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "ACF-0903",
+      "nombre": "Álgebra Lineal",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "AED-1286",
+      "nombre": "Programación Orientada a Objetos",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "AEC-1008",
+      "nombre": "Contabilidad Financiera",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "AEC-1058",
+      "nombre": "Química",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 2,
+      "clave": "AEF-1052",
+      "nombre": "Probabilidad y Estadística",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "ACF-0904",
+      "nombre": "Cálculo Vectorial",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "SCC-1013",
+      "nombre": "Investigación de Operaciones",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "AED-1026",
+      "nombre": "Estructura de Datos",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "SCC-1005",
+      "nombre": "Cultura Empresarial",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "ACD-0908",
+      "nombre": "Desarrollo Sustentable",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 3,
+      "clave": "SCF-1006",
+      "nombre": "Física General",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "ACF-0905",
+      "nombre": "Ecuaciones Diferenciales",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "AEF-1031",
+      "nombre": "Fundamentos de Bases de Datos",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "SCD-1027",
+      "nombre": "Tópicos Avanzados de Programación",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "SCC-1017",
+      "nombre": "Métodos Numéricos",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "AEC-1034",
+      "nombre": "Fundamentos de Telecomunicaciones",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 4,
+      "clave": "SCD-1018",
+      "nombre": "Principios Eléctricos y Aplicaciones Digitales",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "SCC-1007",
+      "nombre": "Fundamentos de Ingeniería de Software",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "SCA-1025",
+      "nombre": "Taller de Base de Datos",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "SCC-1012",
+      "nombre": "Inteligencia Artificial",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "AEC-1061",
+      "nombre": "Sistemas Operativos",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "SCD-1021",
+      "nombre": "Redes de Computadoras",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "SCD-1003",
+      "nombre": "Arquitectura de Computadoras",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCD-1011",
+      "nombre": "Ingeniería de Software",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCB-1001",
+      "nombre": "Administración de Bases de Datos",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCD-1015",
+      "nombre": "Lenguajes y Autómatas I",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCA-1026",
+      "nombre": "Taller de Sistemas Operativos",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCD-1004",
+      "nombre": "Conmutación y Enrutamiento en Redes de Datos",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 6,
+      "clave": "SCC-1014",
+      "nombre": "Lenguajes de Interfaz",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "SCG-1009",
+      "nombre": "Gestión de Proyectos de Software",
+      "creditos": 6,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "COH-2401",
+      "nombre": "Tópicos para el Despliegue de Aplicaciones",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "SCD-1016",
+      "nombre": "Lenguajes y Autómatas II",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "AEB-1055",
+      "nombre": "Programación Web",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "SCC-1010",
+      "nombre": "Graficación",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 7,
+      "clave": "SCC-1023",
+      "nombre": "Sistemas Programables",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "COC-2402",
+      "nombre": "Inteligencia de Negocios I",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "COC-2403",
+      "nombre": "Servicios en la Nube",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "COH-2405",
+      "nombre": "Desarrollo de Aplicaciones Móviles",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "ACA-0909",
+      "nombre": "Taller de Investigación I",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "SCC-1019",
+      "nombre": "Programación Lógica y Funcional",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 8,
+      "clave": "SCA-1002",
+      "nombre": "Administración de Redes",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 9,
+      "clave": "COC-2404",
+      "nombre": "Inteligencia de Negocios II",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 9,
+      "clave": "COB-2406",
+      "nombre": "Proyecto Integrador para Aplicaciones Empresariales",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 9,
+      "clave": "ACA-0910",
+      "nombre": "Taller de Investigación II",
+      "creditos": 4,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 9,
+      "clave": "SCD-1022",
+      "nombre": "Simulación",
+      "creditos": 5,
+      "origen": "PDF_RETICULA"
+    },
+    {
+      "semestre": 5,
+      "clave": "AC",
+      "nombre": "Actividades Complementarias",
+      "creditos": 5,
+      "origen": "PDF_RETICULA",
+      "componente": true
+    },
+    {
+      "semestre": 7,
+      "clave": "S1",
+      "nombre": "Servicio Social",
+      "creditos": 10,
+      "origen": "PDF_RETICULA",
+      "componente": true
+    },
+    {
+      "semestre": 9,
+      "clave": "R1",
+      "nombre": "Residencia Profesional",
+      "creditos": 10,
+      "origen": "PDF_RETICULA",
+      "componente": true
+    }
+  ],
+  "prerrequisitos": [
+    {
+      "materia": "ACF-0902",
+      "prerrequisito": "ACF-0901",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "ACF-0904",
+      "prerrequisito": "ACF-0902",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "ACF-0905",
+      "prerrequisito": "ACF-0904",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "AED-1286",
+      "prerrequisito": "AED-1285",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "AED-1026",
+      "prerrequisito": "AED-1286",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1027",
+      "prerrequisito": "AED-1026",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCA-1025",
+      "prerrequisito": "AEF-1031",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCB-1001",
+      "prerrequisito": "SCA-1025",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1021",
+      "prerrequisito": "AEC-1034",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1004",
+      "prerrequisito": "SCD-1021",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCA-1026",
+      "prerrequisito": "AEC-1061",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1003",
+      "prerrequisito": "SCD-1018",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCC-1014",
+      "prerrequisito": "SCD-1003",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCC-1023",
+      "prerrequisito": "SCC-1014",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1016",
+      "prerrequisito": "SCD-1015",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCD-1011",
+      "prerrequisito": "SCC-1007",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "SCG-1009",
+      "prerrequisito": "SCD-1011",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    },
+    {
+      "materia": "ACA-0910",
+      "prerrequisito": "ACA-0909",
+      "origen": "ARCO_VISIBLE_PDF_RETICULA"
+    }
+  ],
+  "docentes": [
+    {
+      "clave": "REF-DOC-001",
+      "nombre": "RUIZ GAYTAN LUZ DEL CARMEN",
+      "origen_nombre": "PDF_CARGA",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "REF-DOC-002",
+      "nombre": "BALTAZAR FLORES MARIA DEL ROSARIO",
+      "origen_nombre": "PDF_CARGA",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "REF-DOC-003",
+      "nombre": "VALDIVIA MURILLO MARIA MAGDALENA",
+      "origen_nombre": "PDF_CARGA",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "REF-DOC-004",
+      "nombre": "RAMIREZ MENDEZ JESUS ENRIQUE",
+      "origen_nombre": "PDF_CARGA",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "REF-DOC-005",
+      "nombre": "TRUJILLO CASTELLANOS CARLOS ALBERTO",
+      "origen_nombre": "PDF_CARGA",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-001",
+      "nombre": "Docente Sintético 001",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-002",
+      "nombre": "Docente Sintético 002",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-003",
+      "nombre": "Docente Sintético 003",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-004",
+      "nombre": "Docente Sintético 004",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-005",
+      "nombre": "Docente Sintético 005",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-006",
+      "nombre": "Docente Sintético 006",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-007",
+      "nombre": "Docente Sintético 007",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-008",
+      "nombre": "Docente Sintético 008",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-009",
+      "nombre": "Docente Sintético 009",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-010",
+      "nombre": "Docente Sintético 010",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-011",
+      "nombre": "Docente Sintético 011",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-012",
+      "nombre": "Docente Sintético 012",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-013",
+      "nombre": "Docente Sintético 013",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-014",
+      "nombre": "Docente Sintético 014",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-015",
+      "nombre": "Docente Sintético 015",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-016",
+      "nombre": "Docente Sintético 016",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-017",
+      "nombre": "Docente Sintético 017",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-018",
+      "nombre": "Docente Sintético 018",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-019",
+      "nombre": "Docente Sintético 019",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-020",
+      "nombre": "Docente Sintético 020",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-021",
+      "nombre": "Docente Sintético 021",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-022",
+      "nombre": "Docente Sintético 022",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-023",
+      "nombre": "Docente Sintético 023",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-024",
+      "nombre": "Docente Sintético 024",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-025",
+      "nombre": "Docente Sintético 025",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-026",
+      "nombre": "Docente Sintético 026",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-027",
+      "nombre": "Docente Sintético 027",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-028",
+      "nombre": "Docente Sintético 028",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-029",
+      "nombre": "Docente Sintético 029",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-030",
+      "nombre": "Docente Sintético 030",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-031",
+      "nombre": "Docente Sintético 031",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-032",
+      "nombre": "Docente Sintético 032",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-033",
+      "nombre": "Docente Sintético 033",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-034",
+      "nombre": "Docente Sintético 034",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-035",
+      "nombre": "Docente Sintético 035",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-036",
+      "nombre": "Docente Sintético 036",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-037",
+      "nombre": "Docente Sintético 037",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-038",
+      "nombre": "Docente Sintético 038",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-039",
+      "nombre": "Docente Sintético 039",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-040",
+      "nombre": "Docente Sintético 040",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-041",
+      "nombre": "Docente Sintético 041",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-042",
+      "nombre": "Docente Sintético 042",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-043",
+      "nombre": "Docente Sintético 043",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-044",
+      "nombre": "Docente Sintético 044",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    },
+    {
+      "clave": "SYN-DOC-045",
+      "nombre": "Docente Sintético 045",
+      "origen_nombre": "SINTETICO",
+      "origen_clave": "SINTETICO"
+    }
+  ],
+  "grupos": [
+    {
+      "materia": "ACF-0901",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-001",
+      "aula": "D21",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "07:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEF-1041",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-002",
+      "aula": "D21",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "07:50",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AED-1285",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-003",
+      "aula": "D21",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCH-1024",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-004",
+      "aula": "D21",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACC-0906",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-005",
+      "aula": "D21",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACA-0907",
+      "grupo": "1T1",
+      "docente": "SYN-DOC-006",
+      "aula": "D21",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0902",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-007",
+      "aula": "D22",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "07:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0903",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-008",
+      "aula": "D22",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "07:50",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AED-1286",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-009",
+      "aula": "D22",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEC-1008",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-010",
+      "aula": "D22",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEC-1058",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-011",
+      "aula": "D22",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEF-1052",
+      "grupo": "2T1",
+      "docente": "SYN-DOC-012",
+      "aula": "D22",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "11:20",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0904",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-013",
+      "aula": "D23",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "07:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1013",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-014",
+      "aula": "D23",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AED-1026",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-015",
+      "aula": "D23",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1005",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-016",
+      "aula": "D23",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACD-0908",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-017",
+      "aula": "D23",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "10:30",
+          "11:20"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCF-1006",
+      "grupo": "3T1",
+      "docente": "SYN-DOC-018",
+      "aula": "D23",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "11:20",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0905",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-019",
+      "aula": "D24",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "07:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEF-1031",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-020",
+      "aula": "D24",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "07:50",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1027",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-021",
+      "aula": "D24",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1017",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-022",
+      "aula": "D24",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEC-1034",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-023",
+      "aula": "D24",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1018",
+      "grupo": "4T1",
+      "docente": "SYN-DOC-024",
+      "aula": "D24",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "11:20",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1007",
+      "grupo": "5B",
+      "docente": "REF-DOC-005",
+      "aula": "D7",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "SCA-1025",
+      "grupo": "5B",
+      "docente": "REF-DOC-001",
+      "aula": "D11",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "SCC-1012",
+      "grupo": "5C",
+      "docente": "REF-DOC-002",
+      "aula": "D6",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "AEC-1061",
+      "grupo": "5B",
+      "docente": "REF-DOC-005",
+      "aula": "LC2",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "SCD-1021",
+      "grupo": "5B",
+      "docente": "REF-DOC-004",
+      "aula": "LR2",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "11:20",
+          "12:10"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "SCD-1003",
+      "grupo": "5A",
+      "docente": "REF-DOC-003",
+      "aula": "D9",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "PDF_CARGA"
+    },
+    {
+      "materia": "SCD-1011",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-025",
+      "aula": "D26",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "07:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCB-1001",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-026",
+      "aula": "D26",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "07:50",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1015",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-027",
+      "aula": "D26",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCA-1026",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-028",
+      "aula": "D26",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1004",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-029",
+      "aula": "D26",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "10:30",
+          "11:20"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1014",
+      "grupo": "6T1",
+      "docente": "SYN-DOC-030",
+      "aula": "D26",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCG-1009",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-031",
+      "aula": "D27",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COH-2401",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-032",
+      "aula": "D27",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1016",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-033",
+      "aula": "D27",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ],
+        [
+          5,
+          "08:45",
+          "09:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEB-1055",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-034",
+      "aula": "D27",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "09:35",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1010",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-035",
+      "aula": "D27",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1023",
+      "grupo": "7T1",
+      "docente": "SYN-DOC-036",
+      "aula": "D27",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COC-2402",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-037",
+      "aula": "D28",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COC-2403",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-038",
+      "aula": "D28",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COH-2405",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-039",
+      "aula": "D28",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACA-0909",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-040",
+      "aula": "D28",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCC-1019",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-041",
+      "aula": "D28",
+      "sesiones": [
+        [
+          2,
+          "08:45",
+          "10:25"
+        ],
+        [
+          4,
+          "08:45",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCA-1002",
+      "grupo": "8T1",
+      "docente": "SYN-DOC-042",
+      "aula": "D28",
+      "sesiones": [
+        [
+          2,
+          "10:30",
+          "12:10"
+        ],
+        [
+          4,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COC-2404",
+      "grupo": "9T1",
+      "docente": "SYN-DOC-043",
+      "aula": "D29",
+      "sesiones": [
+        [
+          1,
+          "07:00",
+          "08:40"
+        ],
+        [
+          3,
+          "07:00",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "COB-2406",
+      "grupo": "9T1",
+      "docente": "SYN-DOC-044",
+      "aula": "D29",
+      "sesiones": [
+        [
+          1,
+          "08:45",
+          "10:25"
+        ],
+        [
+          3,
+          "08:45",
+          "10:25"
+        ],
+        [
+          5,
+          "07:50",
+          "08:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACA-0910",
+      "grupo": "9T1",
+      "docente": "SYN-DOC-045",
+      "aula": "D29",
+      "sesiones": [
+        [
+          1,
+          "10:30",
+          "12:10"
+        ],
+        [
+          3,
+          "10:30",
+          "12:10"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCD-1022",
+      "grupo": "9T1",
+      "docente": "SYN-DOC-005",
+      "aula": "D29",
+      "sesiones": [
+        [
+          2,
+          "07:00",
+          "08:40"
+        ],
+        [
+          4,
+          "07:00",
+          "08:40"
+        ],
+        [
+          5,
+          "09:35",
+          "10:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0901",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-004",
+      "aula": "D40",
+      "sesiones": [
+        [
+          1,
+          "13:00",
+          "14:40"
+        ],
+        [
+          3,
+          "13:00",
+          "14:40"
+        ],
+        [
+          5,
+          "13:00",
+          "13:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEF-1041",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-006",
+      "aula": "D41",
+      "sesiones": [
+        [
+          1,
+          "14:45",
+          "16:25"
+        ],
+        [
+          3,
+          "14:45",
+          "16:25"
+        ],
+        [
+          5,
+          "14:45",
+          "15:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AED-1285",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-010",
+      "aula": "D42",
+      "sesiones": [
+        [
+          2,
+          "13:00",
+          "14:40"
+        ],
+        [
+          4,
+          "13:00",
+          "14:40"
+        ],
+        [
+          5,
+          "13:00",
+          "13:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "SCH-1024",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-011",
+      "aula": "D43",
+      "sesiones": [
+        [
+          2,
+          "14:45",
+          "16:25"
+        ],
+        [
+          4,
+          "14:45",
+          "16:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACC-0906",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-014",
+      "aula": "D44",
+      "sesiones": [
+        [
+          1,
+          "13:00",
+          "14:40"
+        ],
+        [
+          3,
+          "13:00",
+          "14:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACA-0907",
+      "grupo": "1T2",
+      "docente": "SYN-DOC-016",
+      "aula": "D45",
+      "sesiones": [
+        [
+          1,
+          "14:45",
+          "16:25"
+        ],
+        [
+          3,
+          "14:45",
+          "16:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0902",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-022",
+      "aula": "D46",
+      "sesiones": [
+        [
+          2,
+          "13:00",
+          "14:40"
+        ],
+        [
+          4,
+          "13:00",
+          "14:40"
+        ],
+        [
+          5,
+          "13:00",
+          "13:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "ACF-0903",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-023",
+      "aula": "D47",
+      "sesiones": [
+        [
+          2,
+          "14:45",
+          "16:25"
+        ],
+        [
+          4,
+          "14:45",
+          "16:25"
+        ],
+        [
+          5,
+          "14:45",
+          "15:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AED-1286",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-028",
+      "aula": "D48",
+      "sesiones": [
+        [
+          1,
+          "13:00",
+          "14:40"
+        ],
+        [
+          3,
+          "13:00",
+          "14:40"
+        ],
+        [
+          5,
+          "13:00",
+          "13:50"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEC-1008",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-030",
+      "aula": "D49",
+      "sesiones": [
+        [
+          1,
+          "14:45",
+          "16:25"
+        ],
+        [
+          3,
+          "14:45",
+          "16:25"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEC-1058",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-032",
+      "aula": "D50",
+      "sesiones": [
+        [
+          2,
+          "13:00",
+          "14:40"
+        ],
+        [
+          4,
+          "13:00",
+          "14:40"
+        ]
+      ],
+      "origen": "SINTETICO"
+    },
+    {
+      "materia": "AEF-1052",
+      "grupo": "2T2",
+      "docente": "SYN-DOC-035",
+      "aula": "D51",
+      "sesiones": [
+        [
+          2,
+          "14:45",
+          "16:25"
+        ],
+        [
+          4,
+          "14:45",
+          "16:25"
+        ],
+        [
+          5,
+          "14:45",
+          "15:35"
+        ]
+      ],
+      "origen": "SINTETICO"
+    }
+  ],
+  "estudiantes": [
+    {
+      "indice": 1,
+      "control": "24248001",
+      "nombre": "Estudiante Sintético 001",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 2,
+      "control": "24247584",
+      "nombre": "Estudiante Sintético 002",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 3,
+      "control": "24241283",
+      "nombre": "Estudiante Sintético 003",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 4,
+      "control": "24243384",
+      "nombre": "Estudiante Sintético 004",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 5,
+      "control": "24243541",
+      "nombre": "Estudiante Sintético 005",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 6,
+      "control": "24240579",
+      "nombre": "Estudiante Sintético 006",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 7,
+      "control": "24241395",
+      "nombre": "Estudiante Sintético 007",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 8,
+      "control": "24249380",
+      "nombre": "Estudiante Sintético 008",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 9,
+      "control": "24245711",
+      "nombre": "Estudiante Sintético 009",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 10,
+      "control": "24243097",
+      "nombre": "Estudiante Sintético 010",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 11,
+      "control": "24245615",
+      "nombre": "Estudiante Sintético 011",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 12,
+      "control": "24242086",
+      "nombre": "Estudiante Sintético 012",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 13,
+      "control": "24242109",
+      "nombre": "Estudiante Sintético 013",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 14,
+      "control": "24247315",
+      "nombre": "Estudiante Sintético 014",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 15,
+      "control": "24242267",
+      "nombre": "Estudiante Sintético 015",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 16,
+      "control": "24241120",
+      "nombre": "Estudiante Sintético 016",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 17,
+      "control": "24248595",
+      "nombre": "Estudiante Sintético 017",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 18,
+      "control": "24241808",
+      "nombre": "Estudiante Sintético 018",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 19,
+      "control": "24245603",
+      "nombre": "Estudiante Sintético 019",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 20,
+      "control": "24248281",
+      "nombre": "Estudiante Sintético 020",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 21,
+      "control": "24243150",
+      "nombre": "Estudiante Sintético 021",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 22,
+      "control": "24249117",
+      "nombre": "Estudiante Sintético 022",
+      "semestre": 5,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1007",
+        "SCA-1025",
+        "SCC-1012",
+        "AEC-1061"
+      ]
+    },
+    {
+      "indice": 23,
+      "control": "24249210",
+      "nombre": "Estudiante Sintético 023",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 24,
+      "control": "24246787",
+      "nombre": "Estudiante Sintético 024",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 25,
+      "control": "24243144",
+      "nombre": "Estudiante Sintético 025",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 26,
+      "control": "24249890",
+      "nombre": "Estudiante Sintético 026",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 27,
+      "control": "24245846",
+      "nombre": "Estudiante Sintético 027",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 28,
+      "control": "24243720",
+      "nombre": "Estudiante Sintético 028",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017",
+        "AEC-1034"
+      ]
+    },
+    {
+      "indice": 29,
+      "control": "24248085",
+      "nombre": "Estudiante Sintético 029",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 30,
+      "control": "24240100",
+      "nombre": "Estudiante Sintético 030",
+      "semestre": 4,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0905",
+        "AEF-1031",
+        "SCD-1027",
+        "SCC-1017"
+      ]
+    },
+    {
+      "indice": 31,
+      "control": "24249958",
+      "nombre": "Estudiante Sintético 031",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0904",
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005"
+      ]
+    },
+    {
+      "indice": 32,
+      "control": "24243688",
+      "nombre": "Estudiante Sintético 032",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0904",
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005"
+      ]
+    },
+    {
+      "indice": 33,
+      "control": "24245798",
+      "nombre": "Estudiante Sintético 033",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0904",
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005"
+      ]
+    },
+    {
+      "indice": 34,
+      "control": "24248609",
+      "nombre": "Estudiante Sintético 034",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0904",
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005"
+      ]
+    },
+    {
+      "indice": 35,
+      "control": "24247296",
+      "nombre": "Estudiante Sintético 035",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005",
+        "ACD-0908"
+      ]
+    },
+    {
+      "indice": 36,
+      "control": "24248564",
+      "nombre": "Estudiante Sintético 036",
+      "semestre": 3,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "ACF-0904",
+        "SCC-1013",
+        "AED-1026",
+        "SCC-1005"
+      ]
+    },
+    {
+      "indice": 37,
+      "control": "24243601",
+      "nombre": "Estudiante Sintético 037",
+      "semestre": 6,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCD-1011",
+        "SCB-1001",
+        "SCD-1015",
+        "SCA-1026"
+      ]
+    },
+    {
+      "indice": 38,
+      "control": "24247117",
+      "nombre": "Estudiante Sintético 038",
+      "semestre": 6,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCD-1011",
+        "SCB-1001",
+        "SCD-1015",
+        "SCA-1026"
+      ]
+    },
+    {
+      "indice": 39,
+      "control": "24240911",
+      "nombre": "Estudiante Sintético 039",
+      "semestre": 6,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCD-1011",
+        "SCB-1001",
+        "SCD-1015",
+        "SCA-1026"
+      ]
+    },
+    {
+      "indice": 40,
+      "control": "24240899",
+      "nombre": "Estudiante Sintético 040",
+      "semestre": 6,
+      "anio": 2024,
+      "generacion": 24,
+      "materias_horario": [
+        "SCD-1011",
+        "SCB-1001",
+        "SCD-1015",
+        "SCA-1026"
+      ]
+    },
+    {
+      "indice": 41,
+      "control": "23236778",
+      "nombre": "Estudiante Sintético 041",
+      "semestre": 7,
+      "anio": 2023,
+      "generacion": 23,
+      "materias_horario": [
+        "SCG-1009",
+        "COH-2401",
+        "SCD-1016",
+        "AEB-1055"
+      ]
+    },
+    {
+      "indice": 42,
+      "control": "23235691",
+      "nombre": "Estudiante Sintético 042",
+      "semestre": 7,
+      "anio": 2023,
+      "generacion": 23,
+      "materias_horario": [
+        "COH-2401",
+        "SCD-1016",
+        "AEB-1055",
+        "SCC-1010"
+      ]
+    },
+    {
+      "indice": 43,
+      "control": "23235699",
+      "nombre": "Estudiante Sintético 043",
+      "semestre": 7,
+      "anio": 2023,
+      "generacion": 23,
+      "materias_horario": [
+        "SCG-1009",
+        "COH-2401",
+        "SCD-1016",
+        "AEB-1055"
+      ]
+    },
+    {
+      "indice": 44,
+      "control": "23232044",
+      "nombre": "Estudiante Sintético 044",
+      "semestre": 7,
+      "anio": 2023,
+      "generacion": 23,
+      "materias_horario": [
+        "SCG-1009",
+        "COH-2401",
+        "SCD-1016",
+        "AEB-1055"
+      ]
+    },
+    {
+      "indice": 45,
+      "control": "26261026",
+      "nombre": "Estudiante Sintético 045",
+      "semestre": 2,
+      "anio": 2026,
+      "generacion": 26,
+      "materias_horario": [
+        "ACF-0902",
+        "ACF-0903",
+        "AED-1286",
+        "AEC-1008"
+      ]
+    },
+    {
+      "indice": 46,
+      "control": "26261428",
+      "nombre": "Estudiante Sintético 046",
+      "semestre": 2,
+      "anio": 2026,
+      "generacion": 26,
+      "materias_horario": [
+        "ACF-0902",
+        "ACF-0903",
+        "AED-1286",
+        "AEC-1008"
+      ]
+    },
+    {
+      "indice": 47,
+      "control": "26269629",
+      "nombre": "Estudiante Sintético 047",
+      "semestre": 1,
+      "anio": 2026,
+      "generacion": 26,
+      "materias_horario": [
+        "ACF-0901",
+        "AEF-1041",
+        "AED-1285",
+        "SCH-1024"
+      ]
+    },
+    {
+      "indice": 48,
+      "control": "26262591",
+      "nombre": "Estudiante Sintético 048",
+      "semestre": 1,
+      "anio": 2026,
+      "generacion": 26,
+      "materias_horario": [
+        "ACF-0901",
+        "AEF-1041",
+        "AED-1285",
+        "SCH-1024"
+      ]
+    },
+    {
+      "indice": 49,
+      "control": "23235764",
+      "nombre": "Estudiante Sintético 049",
+      "semestre": 8,
+      "anio": 2023,
+      "generacion": 23,
+      "materias_horario": [
+        "COC-2402",
+        "COC-2403",
+        "COH-2405",
+        "ACA-0909"
+      ]
+    },
+    {
+      "indice": 50,
+      "control": "22221632",
+      "nombre": "Estudiante Sintético 050",
+      "semestre": 9,
+      "anio": 2022,
+      "generacion": 22,
+      "materias_horario": [
+        "COC-2404",
+        "COB-2406",
+        "ACA-0910",
+        "SCD-1022"
+      ]
+    }
+  ],
+  "conteos": {
+    "usuarios": 101,
+    "estudiantes": 50,
+    "docentes": 50,
+    "grupos": 64,
+    "sesiones": 161,
+    "historial": 1457,
+    "horarios": 50,
+    "detalles": 200
+  }
+}

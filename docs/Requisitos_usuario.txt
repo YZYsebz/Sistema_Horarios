@@ -1,0 +1,2030 @@
+Actúa como un **arquitecto de software y desarrollador Full Stack senior especializado en SQL Server, ASP.NET Core, Entity Framework Core, React, TypeScript y arquitectura de aplicaciones web**.
+
+Estamos desarrollando el proyecto:
+
+# Sistema de Generación y Validación de Horarios Académicos
+
+La base de datos ya fue diseñada previamente siguiendo:
+
+- Tercera Forma Normal — 3FN.
+- SQL Server.
+- Integridad referencial.
+- PK, FK, UNIQUE, CHECK y DEFAULT.
+- Stored Procedures.
+- separación por esquemas.
+- principio de mínimo privilegio.
+
+No rediseñes la base desde cero salvo que detectes un error crítico.
+
+El proceso que debes realizar a partir de ahora tiene dos grandes etapas:
+
+```text
+ETAPA 1
+Generar y validar datos de prueba.
+
+ETAPA 2
+Comenzar el desarrollo de la aplicación web.
+```
+
+No comenzar la ETAPA 2 hasta comprobar que los datos de prueba y la base funcionan correctamente.
+
+---
+
+# 1. ARCHIVOS DE REFERENCIA
+
+Utiliza como fuente académica los archivos adjuntos:
+
+```text
+Reticula-Ingenieria-en-Sistemas-Computacionales(2).pdf
+
+CargaAcademica_24240198 (8).pdf
+```
+
+Debes leer ambos documentos antes de generar los datos.
+
+La información contenida en ellos debe tratarse como:
+
+```text
+DATOS ACADÉMICOS DE REFERENCIA
+```
+
+No inventes que los datos sintéticos provienen de estos documentos.
+
+Debes diferenciar claramente entre:
+
+```text
+DATOS TOMADOS DE LOS ARCHIVOS
+
+y
+
+DATOS SINTÉTICOS GENERADOS PARA PRUEBAS
+```
+
+---
+
+# 2. RETÍCULA BASE
+
+La carrera inicial es:
+
+```text
+Ingeniería en Sistemas Computacionales
+```
+
+Retícula:
+
+```text
+ISIC-2010-224
+```
+
+Utiliza las materias reales de la retícula adjunta incluyendo, cuando sea posible:
+
+- semestre;
+- clave;
+- nombre;
+- créditos.
+
+Por ejemplo:
+
+```text
+ACF-0901
+Cálculo Diferencial
+Semestre 1
+5 créditos
+
+ACF-0902
+Cálculo Integral
+Semestre 2
+5 créditos
+
+ACF-0904
+Cálculo Vectorial
+Semestre 3
+5 créditos
+
+SCC-1007
+Fundamentos de Ingeniería de Software
+Semestre 5
+4 créditos
+
+SCD-1003
+Arquitectura de Computadoras
+Semestre 5
+5 créditos
+
+AEC-1061
+Sistemas Operativos
+Semestre 5
+4 créditos
+
+SCD-1021
+Redes de Computadoras
+Semestre 6
+5 créditos
+
+SCC-1012
+Inteligencia Artificial
+4 créditos
+```
+
+Extrae del PDF todas las materias que puedan identificarse correctamente.
+
+No inventes claves de materias inexistentes para rellenar registros.
+
+---
+
+# 3. HORARIOS REALES DE REFERENCIA
+
+La carga académica adjunta contiene ejemplos reales de la estructura que deben seguir los horarios.
+
+Utiliza inicialmente como registros base:
+
+## Taller de Base de Datos
+
+```text
+Clave:
+SCA-1025
+
+Créditos:
+4
+
+Grupo:
+5B
+
+Docente:
+RUIZ GAYTAN LUZ DEL CARMEN
+
+Lunes:
+10:30 - 12:10
+Aula D11
+
+Miércoles:
+10:30 - 12:10
+Aula D11
+```
+
+## Inteligencia Artificial
+
+```text
+Clave:
+SCC-1012
+
+Créditos:
+4
+
+Grupo:
+5C
+
+Docente:
+BALTAZAR FLORES MARIA DEL ROSARIO
+
+Lunes:
+07:00 - 08:40
+Aula D6
+
+Miércoles:
+07:00 - 08:40
+Aula D6
+```
+
+## Arquitectura de Computadoras
+
+```text
+Clave:
+SCD-1003
+
+Créditos:
+5
+
+Grupo:
+5A
+
+Docente:
+VALDIVIA MURILLO MARIA MAGDALENA
+
+Lunes:
+08:45 - 10:25
+Aula D9
+
+Miércoles:
+08:45 - 10:25
+Aula D9
+
+Viernes:
+08:45 - 09:35
+Aula D9
+```
+
+## Redes de Computadoras
+
+```text
+Clave:
+SCD-1021
+
+Créditos:
+5
+
+Grupo:
+5B
+
+Docente:
+RAMIREZ MENDEZ JESUS ENRIQUE
+
+Martes:
+10:30 - 12:10
+Aula LR2
+
+Jueves:
+10:30 - 12:10
+Aula LR2
+
+Viernes:
+11:20 - 12:10
+Aula LR2
+```
+
+## Fundamentos de Ingeniería de Software
+
+```text
+Clave:
+SCC-1007
+
+Créditos:
+4
+
+Grupo:
+5B
+
+Docente:
+TRUJILLO CASTELLANOS CARLOS ALBERTO
+
+Martes:
+07:00 - 08:40
+Aula D7
+
+Jueves:
+07:00 - 08:40
+Aula D7
+```
+
+## Sistemas Operativos
+
+```text
+Clave:
+AEC-1061
+
+Créditos:
+4
+
+Grupo:
+5B
+
+Docente:
+TRUJILLO CASTELLANOS CARLOS ALBERTO
+
+Martes:
+08:45 - 10:25
+Aula LC2
+
+Jueves:
+08:45 - 10:25
+Aula LC2
+```
+
+Estos registros deben servir como **datos semilla reales de referencia**.
+
+A partir de ellos pueden generarse grupos adicionales sintéticos.
+
+---
+
+# 4. REGLA PARA DATOS SINTÉTICOS
+
+Los registros adicionales deben ser:
+
+- coherentes;
+- realistas;
+- reproducibles;
+- válidos según las reglas de negocio;
+- claramente identificables como datos de prueba.
+
+No utilizar datos personales reales adicionales.
+
+Para estudiantes ficticios utilizar nombres sintéticos.
+
+Para profesores adicionales utilizar nombres ficticios.
+
+Los datos reales del archivo únicamente deben utilizarse cuando estén explícitamente presentes en el documento.
+
+---
+
+# 5. CANTIDAD DE DATOS DE PRUEBA
+
+Las tablas transaccionales que naturalmente permiten muchos registros deberán contener **como mínimo 50 registros válidos**.
+
+NO rellenar artificialmente catálogos que por naturaleza tienen menos valores.
+
+Por ejemplo:
+
+```text
+Cat_DiaSemana
+```
+
+debe contener 7 registros, NO 50.
+
+Igualmente:
+
+```text
+Cat_Rol
+```
+
+debe contener solamente los roles reales.
+
+La regla de mínimo 50 aplica principalmente a las tablas operativas.
+
+Utilizar aproximadamente:
+
+| Tabla | Mínimo |
+|---|---:|
+| App.Tbl_Usuario | 100 |
+| App.Tbl_Estudiante | 50 |
+| App.Tbl_Docente | 50 |
+| App.Tbl_Grupo | 50 |
+| App.Tbl_SesionGrupo | 100 |
+| App.Tbl_HistorialAcademico | 300 |
+| App.Tbl_HorarioGenerado | 50 |
+| App.Tbl_HorarioGeneradoDetalle | 200 |
+
+Si existen otras tablas transaccionales capaces de contener múltiples registros, generar como mínimo 50 cuando tenga sentido.
+
+No romper la lógica del dominio únicamente para alcanzar 50 registros.
+
+---
+
+# 6. CATÁLOGOS
+
+Los catálogos deben contener únicamente valores válidos.
+
+Ejemplo:
+
+## Cat_Rol
+
+```text
+COORDINADOR
+ESTUDIANTE
+DOCENTE
+```
+
+## Cat_DiaSemana
+
+```text
+LUNES
+MARTES
+MIERCOLES
+JUEVES
+VIERNES
+SABADO
+DOMINGO
+```
+
+## Cat_EstatusAcademico
+
+```text
+APROBADA
+NO_APROBADA
+CURSANDO
+PENDIENTE
+```
+
+## Cat_TipoAula
+
+```text
+AULA
+LABORATORIO
+COMPUTO
+OTRO
+```
+
+No generar valores ficticios únicamente para alcanzar 50.
+
+---
+
+# 7. NÚMERO DE CONTROL
+
+Esta regla es OBLIGATORIA.
+
+El número de control debe contener:
+
+```text
+EXACTAMENTE 8 DÍGITOS
+```
+
+Todos deben ser numéricos.
+
+Formato:
+
+```text
+YYGGNNNN
+```
+
+Donde:
+
+```text
+YY
+=
+últimos dos dígitos del año de ingreso
+
+GG
+=
+número de generación
+
+NNNN
+=
+cuatro dígitos aleatorios
+```
+
+Ejemplo:
+
+```text
+24240198
+```
+
+Interpretación:
+
+```text
+24
+Año de ingreso 2024
+
+24
+Generación 24
+
+0198
+Segmento aleatorio
+```
+
+---
+
+# 8. GENERACIONES
+
+La generación inicial será:
+
+```text
+24
+```
+
+Para los primeros estudiantes de prueba utilizar:
+
+```text
+Año ingreso:
+2024
+
+Generación:
+24
+```
+
+Por lo tanto:
+
+```text
+2424####
+```
+
+Ejemplos válidos:
+
+```text
+24240001
+24240127
+24241984
+24247531
+24249999
+```
+
+Posteriormente podrán existir:
+
+```text
+2025
+Generación 25
+
+2525####
+```
+
+y:
+
+```text
+2026
+Generación 26
+
+2626####
+```
+
+Para los datos iniciales utiliza principalmente generación 24.
+
+---
+
+# 9. REGLA DE UNICIDAD PARA NÚMEROS DE CONTROL
+
+No puede existir ningún número repetido.
+
+Debe existir:
+
+```sql
+UNIQUE
+```
+
+sobre:
+
+```text
+cNumeroControl
+```
+
+Antes de insertar los estudiantes, comprueba que todos los números generados sean únicos.
+
+---
+
+# 10. TIPO DE DATO DEL NÚMERO DE CONTROL
+
+Aunque contenga únicamente números, NO utilizar:
+
+```sql
+INT
+```
+
+como tipo principal.
+
+Utilizar preferentemente:
+
+```sql
+CHAR(8)
+```
+
+porque el número de control es un identificador y no un valor utilizado para operaciones matemáticas.
+
+La columna deberá llamarse:
+
+```text
+cNumeroControl
+```
+
+por la convención definida anteriormente.
+
+Crear una validación:
+
+```sql
+CHECK (
+    LEN(cNumeroControl) = 8
+    AND cNumeroControl NOT LIKE '%[^0-9]%'
+)
+```
+
+Ajustar la sintaxis si resulta necesario.
+
+---
+
+# 11. GENERACIÓN DEL NÚMERO DE CONTROL
+
+Para cada estudiante:
+
+1. obtener año de ingreso;
+2. tomar los últimos dos dígitos;
+3. obtener generación;
+4. convertir generación a dos dígitos;
+5. generar cuatro dígitos aleatorios;
+6. concatenar;
+7. verificar que no exista;
+8. insertar.
+
+Ejemplo conceptual:
+
+```text
+2024
+↓
+24
+
+Generación
+24
+
+Aleatorio
+5831
+
+Resultado
+24245831
+```
+
+---
+
+# 12. REPRODUCIBILIDAD DE DATOS
+
+No generar datos totalmente diferentes cada vez que se ejecute el script.
+
+El script:
+
+```text
+12_TestData.sql
+```
+
+debe ser preferentemente reproducible.
+
+Puedes:
+
+- utilizar una lista pre-generada de números;
+- utilizar una tabla temporal;
+- utilizar una estrategia determinística.
+
+Evitar que ejecutar el script dos veces duplique información.
+
+Implementar comprobaciones con:
+
+```sql
+IF NOT EXISTS
+```
+
+cuando corresponda.
+
+---
+
+# 13. ESTUDIANTES
+
+Crear mínimo:
+
+```text
+50 estudiantes
+```
+
+Distribuirlos principalmente entre:
+
+```text
+semestres 1 a 9
+```
+
+con mayor concentración en:
+
+```text
+semestres 3 a 7
+```
+
+Cada estudiante debe tener:
+
+- usuario;
+- número de control;
+- carrera;
+- retícula;
+- semestre actual;
+- máximo de créditos;
+- año de ingreso;
+- generación.
+
+Los nombres deben ser ficticios.
+
+NO utilizar datos personales reales del documento como datos masivos.
+
+---
+
+# 14. HISTORIAL ACADÉMICO
+
+Crear un historial realista para cada estudiante.
+
+No asignar materias aleatoriamente sin considerar el semestre.
+
+Ejemplo:
+
+Un estudiante de quinto semestre probablemente tendrá:
+
+```text
+materias de semestres 1-4:
+principalmente APROBADAS
+
+materias de semestre 5:
+CURSANDO o PENDIENTE
+
+materias superiores:
+PENDIENTE
+```
+
+Debe existir suficiente información para probar:
+
+- prerrequisitos cumplidos;
+- prerrequisitos incumplidos;
+- materias aprobadas;
+- materias reprobadas;
+- materias cursando;
+- materias pendientes.
+
+Generar al menos:
+
+```text
+300 registros
+```
+
+de historial.
+
+Preferentemente entre:
+
+```text
+500 y 1000
+```
+
+si la estructura lo permite.
+
+---
+
+# 15. DOCENTES
+
+Mantener los docentes reales presentes en la carga académica como registros de referencia.
+
+Crear docentes ficticios adicionales hasta tener como mínimo:
+
+```text
+50 docentes
+```
+
+Todos deberán tener:
+
+- número de empleado único;
+- nombre;
+- estado.
+
+No utilizar números de empleado reales desconocidos.
+
+---
+
+# 16. AULAS
+
+Mantener como referencia:
+
+```text
+D6
+D7
+D9
+D11
+LC2
+LR2
+```
+
+Crear aulas sintéticas adicionales siguiendo una nomenclatura similar.
+
+Ejemplos:
+
+```text
+D1
+D2
+D3
+D4
+D5
+
+LC1
+LC2
+LC3
+
+LR1
+LR2
+LR3
+```
+
+No generar dos aulas con la misma clave.
+
+Asignar tipos coherentes:
+
+```text
+D
+→ Aula
+
+LC
+→ Laboratorio de cómputo
+
+LR
+→ Laboratorio
+```
+
+cuando corresponda.
+
+---
+
+# 17. GRUPOS
+
+Crear mínimo:
+
+```text
+50 grupos
+```
+
+Utilizar materias reales de la retícula.
+
+Las claves de grupo pueden seguir formatos como:
+
+```text
+1A
+1B
+2A
+2B
+3A
+3B
+5A
+5B
+5C
+```
+
+Mantener los grupos reales de la carga académica:
+
+```text
+SCA-1025 → 5B
+SCC-1012 → 5C
+SCD-1003 → 5A
+SCD-1021 → 5B
+SCC-1007 → 5B
+AEC-1061 → 5B
+```
+
+Crear grupos adicionales de prueba.
+
+---
+
+# 18. SESIONES
+
+Crear mínimo:
+
+```text
+100 sesiones
+```
+
+Preferentemente entre:
+
+```text
+120 y 200
+```
+
+Mantener exactamente las sesiones tomadas del archivo de carga académica.
+
+Las sesiones sintéticas deberán utilizar principalmente los bloques horarios observados en los archivos.
+
+Ejemplos:
+
+```text
+07:00 - 08:40
+
+08:45 - 10:25
+
+10:30 - 12:10
+```
+
+y bloques más cortos cuando corresponda, por ejemplo:
+
+```text
+08:45 - 09:35
+
+11:20 - 12:10
+```
+
+No generar horarios incoherentes como:
+
+```text
+08:00 - 07:00
+```
+
+---
+
+# 19. SESIONES VÁLIDAS
+
+Toda sesión deberá cumplir:
+
+```text
+dHoraInicio < dHoraFin
+```
+
+Utilizar el catálogo:
+
+```text
+App.Cat_DiaSemana
+```
+
+No almacenar:
+
+```text
+Lunes
+Martes
+```
+
+como texto directamente en la tabla de sesiones.
+
+---
+
+# 20. CONFLICTOS
+
+Los datos principales deben ser válidos.
+
+No insertar deliberadamente conflictos en los datos normales.
+
+La regla de conflicto es:
+
+```text
+Mismo día
+
+Y
+
+HoraInicioA < HoraFinB
+
+Y
+
+HoraInicioB < HoraFinA
+```
+
+Debe impedirse:
+
+- conflicto de docente;
+- conflicto de aula.
+
+---
+
+# 21. DATOS INVÁLIDOS PARA PRUEBAS
+
+Crear un script separado llamado:
+
+```text
+13_NegativeTests.sql
+```
+
+que intente probar casos inválidos.
+
+Por ejemplo:
+
+```text
+Número de control repetido.
+
+Número de control con 7 dígitos.
+
+Número de control con letras.
+
+Grupo duplicado.
+
+Materia duplicada.
+
+Aula duplicada.
+
+Sesión con inicio mayor al fin.
+
+Choque de docente.
+
+Choque de aula.
+```
+
+Todas estas pruebas deben ejecutarse dentro de:
+
+```sql
+BEGIN TRANSACTION
+```
+
+y finalizar con:
+
+```sql
+ROLLBACK
+```
+
+para no contaminar los datos válidos.
+
+---
+
+# 22. HORARIOS GENERADOS
+
+Crear mínimo:
+
+```text
+50 horarios generados
+```
+
+Cada horario debe:
+
+- pertenecer a un estudiante;
+- pertenecer a un periodo;
+- contener múltiples grupos;
+- no contener grupos duplicados;
+- no contener materias duplicadas;
+- no contener empalmes.
+
+Crear mínimo:
+
+```text
+200 registros
+```
+
+en:
+
+```text
+App.Tbl_HorarioGeneradoDetalle
+```
+
+---
+
+# 23. AUDITORÍA
+
+Si:
+
+```text
+Aud.Tbl_Auditoria
+```
+
+ya existe, insertar al menos:
+
+```text
+50 registros sintéticos
+```
+
+relacionados con acciones de prueba tales como:
+
+```text
+INSERT_ESTUDIANTE
+REGISTRAR_GRUPO
+REGISTRAR_SESION
+MODIFICAR_GRUPO
+GENERAR_HORARIO
+```
+
+Estos registros son exclusivamente simulaciones de prueba.
+
+El usuario de aplicación:
+
+```text
+Usr_SistemaHorarios
+```
+
+NO debe poder consultar estos registros.
+
+---
+
+# 24. ESQUEMAS
+
+Mantener obligatoriamente:
+
+```text
+App
+Rep
+Aud
+```
+
+## App
+
+Objetos funcionales.
+
+Usuario de aplicación:
+
+```text
+SELECT
+INSERT
+UPDATE
+DELETE
+EXECUTE
+```
+
+según corresponda.
+
+## Rep
+
+Objetos de reportes.
+
+Usuario aplicación:
+
+```text
+SELECT
+```
+
+únicamente.
+
+## Aud
+
+Auditoría, rendimiento y mantenimiento.
+
+Usuario aplicación:
+
+```text
+SIN ACCESO
+```
+
+---
+
+# 25. USUARIO SQL SERVER
+
+NO utilizar:
+
+```text
+sa
+```
+
+para la aplicación.
+
+Utilizar:
+
+```text
+Usr_SistemaHorarios
+```
+
+o el usuario runtime definido previamente.
+
+Debe pertenecer a:
+
+```text
+Rol_AppSistemaHorarios
+```
+
+---
+
+# 26. VALIDACIÓN DE LOS DATOS
+
+Después de generar todos los datos ejecutar consultas que comprueben:
+
+```text
+Cantidad de estudiantes.
+
+Cantidad de docentes.
+
+Cantidad de grupos.
+
+Cantidad de sesiones.
+
+Cantidad de historiales.
+
+Cantidad de horarios generados.
+
+Cantidad de detalles de horario.
+```
+
+Después comprobar:
+
+```text
+Números de control duplicados.
+
+Números de control inválidos.
+
+Materias duplicadas.
+
+Grupos duplicados.
+
+Sesiones inválidas.
+
+Docentes con empalmes.
+
+Aulas con empalmes.
+
+Horarios generados con empalmes.
+
+Horarios con materias duplicadas.
+
+Estudiantes con retículas incorrectas.
+
+Materias fuera de la retícula.
+
+Prerrequisitos inconsistentes.
+```
+
+El resultado esperado de las consultas de inconsistencias deberá ser:
+
+```text
+0 registros
+```
+
+---
+
+# 27. VALIDACIÓN DEL NÚMERO DE CONTROL
+
+Crear específicamente una consulta:
+
+```sql
+SELECT
+    cNumeroControl
+FROM App.Tbl_Estudiante
+WHERE LEN(cNumeroControl) <> 8
+   OR cNumeroControl LIKE '%[^0-9]%';
+```
+
+Resultado esperado:
+
+```text
+0 filas
+```
+
+Crear otra para duplicados:
+
+```sql
+SELECT
+    cNumeroControl,
+    COUNT(*) AS nCantidad
+FROM App.Tbl_Estudiante
+GROUP BY cNumeroControl
+HAVING COUNT(*) > 1;
+```
+
+Resultado esperado:
+
+```text
+0 filas
+```
+
+---
+
+# 28. ENTREGA DE DATOS DE PRUEBA
+
+Generar los scripts:
+
+```text
+11_SeedCatalogs.sql
+12_TestData.sql
+13_NegativeTests.sql
+14_DataValidation.sql
+```
+
+No continuar con la aplicación hasta que:
+
+```text
+14_DataValidation.sql
+```
+
+demuestre que los datos son consistentes.
+
+---
+
+# 29. PUNTO DE CONTROL
+
+Al terminar los datos, mostrar una tabla:
+
+| Objeto | Registros | Estado |
+|---|---:|---|
+| Estudiantes | ... | OK |
+| Docentes | ... | OK |
+| Grupos | ... | OK |
+| Sesiones | ... | OK |
+| Historial | ... | OK |
+| Horarios | ... | OK |
+
+Luego indicar:
+
+```text
+BASE DE DATOS VALIDADA
+```
+
+únicamente si todas las pruebas son correctas.
+
+---
+
+# 30. INICIO DEL DESARROLLO WEB
+
+Una vez validada la base de datos, comenzar la construcción de la aplicación.
+
+Utilizar exactamente este stack:
+
+# Frontend
+
+```text
+React
+TypeScript
+Vite
+Bootstrap
+Axios
+```
+
+# Backend
+
+```text
+.NET 10 LTS
+ASP.NET Core Web API
+C#
+Entity Framework Core
+ASP.NET Core Identity
+JWT Bearer Authentication
+OpenAPI / Swagger
+```
+
+# Base de datos
+
+```text
+Microsoft SQL Server
+T-SQL
+```
+
+# Pruebas
+
+```text
+xUnit
+Vitest
+```
+
+# Herramientas
+
+```text
+Visual Studio
+Visual Studio Code
+SQL Server Management Studio
+Git
+GitHub
+```
+
+---
+
+# 31. ARQUITECTURA
+
+Utilizar:
+
+```text
+React
+   |
+   | HTTPS / JSON
+   |
+ASP.NET Core Web API
+   |
+Entity Framework Core
+   |
+SQL Server
+```
+
+No permitir conexiones directas:
+
+```text
+React
+↓
+SQL Server
+```
+
+Todo acceso debe pasar por:
+
+```text
+React
+↓
+API
+↓
+Base de datos
+```
+
+---
+
+# 32. ESTRUCTURA GENERAL DEL REPOSITORIO
+
+Crear:
+
+```text
+SistemaHorarios/
+│
+├── backend/
+│
+├── frontend/
+│
+├── database/
+│
+├── tests/
+│
+├── docs/
+│
+├── .gitignore
+└── README.md
+```
+
+En:
+
+```text
+database/
+```
+
+guardar los scripts SQL generados anteriormente.
+
+---
+
+# 33. SOLUCIÓN BACKEND
+
+Crear una solución .NET:
+
+```text
+SistemaHorarios.sln
+```
+
+Estructura recomendada:
+
+```text
+backend/
+│
+├── SistemaHorarios.Api
+├── SistemaHorarios.Application
+├── SistemaHorarios.Domain
+└── SistemaHorarios.Infrastructure
+```
+
+Responsabilidades:
+
+## Domain
+
+Entidades y reglas principales.
+
+## Application
+
+Casos de uso, interfaces y DTO.
+
+## Infrastructure
+
+Entity Framework Core y acceso a datos.
+
+## Api
+
+Controllers, autenticación, Swagger y configuración HTTP.
+
+Mantener una arquitectura clara sin agregar complejidad innecesaria.
+
+---
+
+# 34. BASE DE DATOS COMO FUENTE EXISTENTE
+
+La base ya existe.
+
+NO utilizar:
+
+```text
+EnsureCreated()
+```
+
+para reconstruir la base.
+
+No ejecutar migrations automáticamente al iniciar la aplicación.
+
+Mapear las tablas existentes mediante Entity Framework Core.
+
+Cada entidad debe indicar explícitamente su esquema.
+
+Ejemplo:
+
+```csharp
+modelBuilder.Entity<Materia>()
+    .ToTable("Cat_Materia", "App");
+```
+
+---
+
+# 35. NO MAPEAR AUDITORÍA PARA LA APLICACIÓN
+
+El usuario runtime no tiene acceso a:
+
+```text
+Aud
+```
+
+Por tanto, el `DbContext` funcional de ASP.NET Core NO debe exponer normalmente entidades administrativas del esquema:
+
+```text
+Aud
+```
+
+Si en el futuro se crea una herramienta DBA, utilizar otra conexión y otro contexto.
+
+---
+
+# 36. ESQUEMA REP
+
+Los objetos:
+
+```text
+Rep
+```
+
+se utilizarán únicamente para lectura.
+
+Cuando EF Core consulte estos objetos:
+
+```text
+AsNoTracking()
+```
+
+debe ser la opción preferida.
+
+Nunca ejecutar:
+
+```text
+INSERT
+UPDATE
+DELETE
+```
+
+sobre objetos de:
+
+```text
+Rep
+```
+
+desde la aplicación.
+
+---
+
+# 37. CONFIGURACIÓN DE CONEXIÓN
+
+Crear configuración mediante:
+
+```text
+appsettings.json
+appsettings.Development.json
+User Secrets
+variables de entorno
+```
+
+NO escribir contraseñas reales en Git.
+
+Utilizar placeholders:
+
+```text
+Server=[SERVIDOR];
+Database=Bd_SistemaHorarios;
+User Id=Usr_SistemaHorarios;
+Password=[SECRET];
+Encrypt=True;
+TrustServerCertificate=True;
+```
+
+---
+
+# 38. PRIMERA PRUEBA DEL BACKEND
+
+Antes de desarrollar toda la aplicación implementar:
+
+```text
+GET /api/health
+```
+
+Resultado:
+
+```json
+{
+  "status": "ok"
+}
+```
+
+Después crear:
+
+```text
+GET /api/materias
+```
+
+que consulte:
+
+```text
+App.Cat_Materia
+```
+
+y comprobar:
+
+```text
+SQL Server
+↓
+Entity Framework
+↓
+API
+↓
+Swagger
+```
+
+---
+
+# 39. SIGUIENTES ENDPOINTS
+
+Una vez comprobada la conexión implementar gradualmente:
+
+```text
+/api/auth
+
+/api/carreras
+
+/api/reticulas
+
+/api/materias
+
+/api/periodos
+
+/api/docentes
+
+/api/aulas
+
+/api/grupos
+
+/api/estudiantes
+
+/api/historial
+
+/api/horarios
+```
+
+No implementarlos todos simultáneamente.
+
+---
+
+# 40. ORDEN DEL BACKEND
+
+Desarrollar en este orden:
+
+```text
+1. Configuración.
+2. DbContext.
+3. Entidades.
+4. Fluent API.
+5. Repositories únicamente donde aporten valor.
+6. Services.
+7. DTO.
+8. Validaciones.
+9. Controllers.
+10. Authentication / Authorization.
+11. Generador de horarios.
+12. Tests.
+```
+
+---
+
+# 41. AUTENTICACIÓN
+
+Implementar:
+
+```text
+JWT
+```
+
+Roles:
+
+```text
+COORDINADOR
+ESTUDIANTE
+DOCENTE
+```
+
+No almacenar contraseñas en texto plano.
+
+Utilizar ASP.NET Core Identity o un mecanismo seguro compatible.
+
+---
+
+# 42. PRIMER MÓDULO FUNCIONAL
+
+El primer flujo funcional completo será:
+
+```text
+LOGIN
+  ↓
+ESTUDIANTE
+  ↓
+CONSULTAR MATERIAS DISPONIBLES
+  ↓
+SELECCIONAR MATERIAS
+  ↓
+CALCULAR CRÉDITOS
+```
+
+No comenzar todavía con el generador complejo hasta completar este flujo.
+
+---
+
+# 43. FRONTEND
+
+Después de comprobar el backend crear:
+
+```text
+frontend/
+```
+
+mediante:
+
+```text
+React
+TypeScript
+Vite
+Bootstrap
+Axios
+```
+
+Crear inicialmente:
+
+```text
+src/
+├── api/
+├── components/
+├── layouts/
+├── models/
+├── pages/
+├── routes/
+├── services/
+├── hooks/
+└── utils/
+```
+
+---
+
+# 44. PRIMERAS PANTALLAS
+
+Crear en este orden:
+
+```text
+LoginPage
+
+DashboardPage
+
+MateriasPage
+
+SeleccionMateriasPage
+
+HorariosPage
+
+MiHorarioPage
+```
+
+Después crear módulos administrativos.
+
+---
+
+# 45. PANEL ADMINISTRATIVO
+
+Posteriormente:
+
+```text
+CarrerasPage
+ReticulasPage
+MateriasAdminPage
+DocentesPage
+AulasPage
+PeriodosPage
+GruposPage
+SesionesPage
+```
+
+Solo usuarios con rol:
+
+```text
+COORDINADOR
+```
+
+podrán acceder.
+
+---
+
+# 46. GENERADOR DE HORARIOS
+
+Una vez funcionales:
+
+```text
+usuarios
+materias
+grupos
+sesiones
+historial
+```
+
+implementar el generador.
+
+Utilizar:
+
+```text
+Backtracking
++
+poda temprana
+```
+
+NO implementar el algoritmo en React.
+
+Debe ejecutarse en:
+
+```text
+ASP.NET Core
+```
+
+como servicio independiente.
+
+Ejemplo:
+
+```text
+HorarioGeneratorService
+```
+
+---
+
+# 47. VALIDACIONES DEL GENERADOR
+
+Debe comprobar:
+
+```text
+RV-001
+No repetir materia.
+
+RV-002
+No permitir empalmes.
+
+RV-003
+No exceder créditos.
+
+RV-004
+Cumplir prerrequisitos.
+
+RV-005
+Periodo activo.
+
+RV-006
+Grupo activo.
+
+RV-007
+Materia perteneciente a retícula.
+
+RV-008
+Sin conflictos de docente.
+
+RV-009
+Sin conflictos de aula.
+```
+
+---
+
+# 48. PRUEBAS UNITARIAS
+
+Crear pruebas xUnit para:
+
+```text
+EmpalmeValidator
+
+CreditosValidator
+
+PrerequisitoValidator
+
+HorarioGenerator
+```
+
+Caso obligatorio:
+
+```text
+Grupo A
+Lunes
+08:00 - 10:00
+
+Grupo B
+Lunes
+09:00 - 11:00
+
+Resultado:
+CONFLICTO
+```
+
+Y:
+
+```text
+Grupo A
+08:00 - 10:00
+
+Grupo B
+10:00 - 12:00
+
+Resultado:
+VÁLIDO
+```
+
+---
+
+# 49. GIT
+
+Inicializar:
+
+```bash
+git init
+```
+
+Crear `.gitignore` para:
+
+```text
+.NET
+Node
+Visual Studio
+VS Code
+secrets
+.env
+bin
+obj
+node_modules
+```
+
+Nunca versionar:
+
+```text
+contraseñas
+connection strings con credenciales
+JWT secrets
+```
+
+---
+
+# 50. README
+
+Crear documentación con:
+
+```text
+Descripción del proyecto.
+
+Arquitectura.
+
+Tecnologías.
+
+Requisitos.
+
+Configuración SQL Server.
+
+Configuración backend.
+
+Configuración frontend.
+
+Cómo ejecutar.
+
+Usuarios/roles de prueba.
+
+Estructura del repositorio.
+```
+
+---
+
+# 51. FORMA DE TRABAJO
+
+No generes todo el proyecto en una sola respuesta gigantesca.
+
+Trabaja por fases.
+
+## FASE 1
+
+Analiza los archivos adjuntos y genera:
+
+```text
+11_SeedCatalogs.sql
+12_TestData.sql
+13_NegativeTests.sql
+14_DataValidation.sql
+```
+
+## FASE 2
+
+Ejecuta conceptualmente las validaciones y revisa cualquier inconsistencia.
+
+## FASE 3
+
+Define la estructura del proyecto web.
+
+## FASE 4
+
+Crea backend inicial.
+
+## FASE 5
+
+Conecta Entity Framework Core.
+
+## FASE 6
+
+Crea primeros endpoints.
+
+## FASE 7
+
+Crea frontend.
+
+## FASE 8
+
+Implementa autenticación.
+
+## FASE 9
+
+Implementa generador de horarios.
+
+## FASE 10
+
+Pruebas finales.
+
+En cada fase explica:
+
+```text
+Qué estamos haciendo.
+
+Por qué.
+
+Qué archivos se crean.
+
+Cómo probarlo.
+
+Qué resultado esperar.
+```
+
+---
+
+# 52. REGLA FINAL
+
+Prioriza siempre:
+
+```text
+Integridad de datos
+↓
+3FN
+↓
+Seguridad
+↓
+Reglas de negocio
+↓
+Pruebas
+↓
+Backend
+↓
+Frontend
+```
+
+No sacrifiques integridad de la base de datos únicamente para generar más registros.
+
+No rellenes catálogos artificialmente para alcanzar 50 registros.
+
+Los datos sintéticos deben parecer académicamente razonables, pero deben identificarse claramente como datos de prueba.
+
+Cuando la base haya pasado todas las validaciones, indica explícitamente:
+
+```text
+BASE DE DATOS LISTA PARA DESARROLLO
+```
+
+y entonces comienza la creación de la aplicación web.

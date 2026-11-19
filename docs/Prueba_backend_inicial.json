@@ -1,0 +1,6 @@
+{
+  "health": "ok",
+  "materias": 55,
+  "swagger": "3.0.4",
+  "efCore": "SQL Server mediante login runtime no administrativo"
+}

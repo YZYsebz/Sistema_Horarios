@@ -1,0 +1,10 @@
+export interface Usuario{id:number;nombreUsuario:string;nombre:string;roles:string[]}
+export interface SesionLogin{accessToken:string;expiresAt:string;usuario:Usuario}
+export interface Perfil{idEstudiante:number;numeroControl:string;nombre:string;semestreActual:number;limiteCreditos:number;idReticula:number;reticula:string;carrera:string;idPeriodo:number;periodo:string;creditosAprobados:number}
+export interface Materia{id:number;clave:string;nombre:string;creditos:number;semestre:number;obligatoria:boolean;grupos:number}
+export interface Sesion{id:number;dia:number;diaNombre:string;idAula:number;aula:string;inicio:string;fin:string}
+export interface Grupo{id:number;idMateria:number;materiaClave:string;materia:string;clave:string;idDocente:number|null;docente:string;idPeriodo:number;periodo:string;activo:boolean;sesiones:Sesion[]}
+export interface Horario{id:number;nombre:string;idPeriodo:number;periodo:string;creditos:number;seleccionado:boolean;fecha:string;grupos:Grupo[]}
+export interface Creditos{total:number;limite:number;dentroDelLimite:boolean;materias:number}
+export interface OpcionHorario{id:number;creditos:number;grupos:Grupo[]}
+export interface Generacion{opciones:OpcionHorario[];limiteAlcanzado:boolean;estadosExplorados:number}

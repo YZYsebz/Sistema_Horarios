@@ -1,0 +1,18 @@
+﻿SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+SET ANSI_PADDING ON;
+SET ANSI_WARNINGS ON;
+SET ARITHABORT ON;
+SET CONCAT_NULL_YIELDS_NULL ON;
+SET NUMERIC_ROUNDABORT OFF;
+GO
+/* Crear sin destruir datos existentes. */
+USE [master];
+GO
+IF DB_ID(N'Bd_SistemaHorarios') IS NULL CREATE DATABASE [Bd_SistemaHorarios];
+GO
+USE [Bd_SistemaHorarios];
+GO
+IF TRY_CONVERT(int,SERVERPROPERTY('ProductMajorVersion')) < 16
+ THROW 51090,N'Se requiere SQL Server 2022 o superior.',1;
+GO

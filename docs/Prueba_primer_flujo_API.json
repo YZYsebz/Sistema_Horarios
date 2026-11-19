@@ -1,0 +1,14 @@
+{
+  "login": "OK",
+  "rol": [
+    "ESTUDIANTE"
+  ],
+  "semestre": 5,
+  "materiasDisponibles": 19,
+  "seleccion": {
+    "total": 16,
+    "limite": 36,
+    "dentroDelLimite": true,
+    "materias": 4
+  }
+}

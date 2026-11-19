@@ -1,0 +1,4 @@
+import {AlertCircle,LoaderCircle} from 'lucide-react';
+export function Loading(){return <div className="loading-state" role="status"><LoaderCircle className="spin" size={23}/><span>Consultando información académica…</span></div>}
+export function ErrorBox({message,retry}:{message:string;retry?:()=>void}){return <div className="alert alert-danger d-flex gap-3 align-items-start" role="alert"><AlertCircle size={21}/><div><strong>No pudimos completar la consulta</strong><p className="mb-0 mt-1">{message}</p>{retry&&<button className="btn btn-sm btn-outline-danger mt-2" onClick={retry}>Volver a intentar</button>}</div></div>}
+export function Empty({title,detail}:{title:string;detail:string}){return <div className="empty-state"><div className="empty-mark">↗</div><h3>{title}</h3><p>{detail}</p></div>}

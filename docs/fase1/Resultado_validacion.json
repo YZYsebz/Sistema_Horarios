@@ -1,0 +1,124 @@
+{
+  "cEstado": "BASE DE DATOS VALIDADA",
+  "Conteos": [
+    {
+      "cObjeto": "Usuarios",
+      "nRegistros": 101,
+      "nMinimo": 100
+    },
+    {
+      "cObjeto": "Estudiantes",
+      "nRegistros": 50,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Docentes",
+      "nRegistros": 50,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Grupos",
+      "nRegistros": 64,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Sesiones",
+      "nRegistros": 161,
+      "nMinimo": 100
+    },
+    {
+      "cObjeto": "Historial",
+      "nRegistros": 1457,
+      "nMinimo": 300
+    },
+    {
+      "cObjeto": "Horarios",
+      "nRegistros": 52,
+      "nMinimo": 50
+    },
+    {
+      "cObjeto": "Detalle",
+      "nRegistros": 210,
+      "nMinimo": 200
+    },
+    {
+      "cObjeto": "Auditoría",
+      "nRegistros": 111,
+      "nMinimo": 50
+    }
+  ],
+  "Comprobaciones": [
+    {
+      "cRegla": "Números de control inválidos",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Números de control duplicados",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Materias duplicadas",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Grupos duplicados",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Sesiones inválidas",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Docentes con empalmes",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Aulas con empalmes",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Horarios con materias duplicadas",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Horarios con empalmes",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Materias fuera de retícula",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Trayectorias o carreras inválidas",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Horarios con créditos excesivos",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Horarios con periodo o grupo inválido",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Prerrequisitos incumplidos en horarios",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Nombres reales usados como estudiantes",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Claves foráneas no confiables",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "CHECK no confiables",
+      "nCantidad": 0
+    },
+    {
+      "cRegla": "Sesiones de referencia faltantes",
+      "nCantidad": 0
+    }
+  ]
+}

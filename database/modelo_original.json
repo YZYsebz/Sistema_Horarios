@@ -1,0 +1,1028 @@
+{
+  "App.Cat_Rol": {
+    "description": "Roles de Identity; múltiples roles por usuario.",
+    "columns": [
+      {
+        "name": "nIdRol",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(256)",
+        "nullable": false,
+        "description": "Nombre de rol"
+      },
+      {
+        "name": "cNombreNormalizado",
+        "type": "nvarchar(256)",
+        "nullable": false,
+        "description": "NormalizedName de Identity"
+      },
+      {
+        "name": "cConcurrencyStamp",
+        "type": "nvarchar(64)",
+        "nullable": true,
+        "description": "Token de concurrencia"
+      }
+    ],
+    "pk": [
+      "nIdRol"
+    ]
+  },
+  "App.Cat_Carrera": {
+    "description": "Maestro de carrera",
+    "columns": [
+      {
+        "name": "nIdCarrera",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(150)",
+        "nullable": false,
+        "description": "Nombre"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdCarrera"
+    ]
+  },
+  "App.Cat_Materia": {
+    "description": "Maestro de materia",
+    "columns": [
+      {
+        "name": "nIdMateria",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(150)",
+        "nullable": false,
+        "description": "Nombre"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdMateria"
+    ]
+  },
+  "App.Cat_TipoAula": {
+    "description": "Maestro de tipoaula",
+    "columns": [
+      {
+        "name": "nIdTipoAula",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(150)",
+        "nullable": false,
+        "description": "Nombre"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdTipoAula"
+    ]
+  },
+  "App.Cat_Reticula": {
+    "description": "Versión de plan de estudios de una carrera.",
+    "columns": [
+      {
+        "name": "nIdReticula",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdCarrera",
+        "type": "int",
+        "nullable": false,
+        "description": "Carrera propietaria del plan"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(150)",
+        "nullable": false,
+        "description": "Nombre del plan"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdReticula"
+    ]
+  },
+  "App.Cat_DiaSemana": {
+    "description": "Dominio ISO fijo: lunes 1 a domingo 7.",
+    "columns": [
+      {
+        "name": "nIdDiaSemana",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Número ISO"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(15)",
+        "nullable": false,
+        "description": "Nombre del día"
+      }
+    ],
+    "pk": [
+      "nIdDiaSemana"
+    ]
+  },
+  "App.Cat_EstatusAcademico": {
+    "description": "Estados controlados del intento académico.",
+    "columns": [
+      {
+        "name": "nIdEstatusAcademico",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(15)",
+        "nullable": false,
+        "description": "APROBADA, NO_APROBADA, CURSANDO o PENDIENTE"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(50)",
+        "nullable": false,
+        "description": "Etiqueta"
+      }
+    ],
+    "pk": [
+      "nIdEstatusAcademico"
+    ]
+  },
+  "App.Tbl_Usuario": {
+    "description": "Usuario compatible con Identity de clave int.",
+    "columns": [
+      {
+        "name": "nIdUsuario",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cNombreUsuario",
+        "type": "nvarchar(256)",
+        "nullable": false,
+        "description": "UserName"
+      },
+      {
+        "name": "cNombreUsuarioNormalizado",
+        "type": "nvarchar(256)",
+        "nullable": false,
+        "description": "NormalizedUserName"
+      },
+      {
+        "name": "cCorreo",
+        "type": "nvarchar(256)",
+        "nullable": true,
+        "description": "Email"
+      },
+      {
+        "name": "cCorreoNormalizado",
+        "type": "nvarchar(256)",
+        "nullable": true,
+        "description": "NormalizedEmail"
+      },
+      {
+        "name": "nCorreoConfirmado",
+        "type": "bit",
+        "nullable": false,
+        "description": "EmailConfirmed"
+      },
+      {
+        "name": "cPasswordHash",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "Hash de PasswordHasher; NULL para acceso externo"
+      },
+      {
+        "name": "cSecurityStamp",
+        "type": "nvarchar(64)",
+        "nullable": true,
+        "description": "SecurityStamp"
+      },
+      {
+        "name": "cConcurrencyStamp",
+        "type": "nvarchar(64)",
+        "nullable": true,
+        "description": "ConcurrencyStamp"
+      },
+      {
+        "name": "cTelefono",
+        "type": "nvarchar(50)",
+        "nullable": true,
+        "description": "PhoneNumber"
+      },
+      {
+        "name": "nTelefonoConfirmado",
+        "type": "bit",
+        "nullable": false,
+        "description": "PhoneNumberConfirmed"
+      },
+      {
+        "name": "nDosFactoresHabilitados",
+        "type": "bit",
+        "nullable": false,
+        "description": "TwoFactorEnabled"
+      },
+      {
+        "name": "dFinBloqueo",
+        "type": "datetimeoffset(0)",
+        "nullable": true,
+        "description": "LockoutEnd"
+      },
+      {
+        "name": "nBloqueoHabilitado",
+        "type": "bit",
+        "nullable": false,
+        "description": "LockoutEnabled"
+      },
+      {
+        "name": "nIntentosFallidos",
+        "type": "int",
+        "nullable": false,
+        "description": "AccessFailedCount"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      },
+      {
+        "name": "dFechaRegistro",
+        "type": "datetime2(0)",
+        "nullable": false,
+        "description": "Alta UTC"
+      }
+    ],
+    "pk": [
+      "nIdUsuario"
+    ]
+  },
+  "App.Tbl_UsuarioRol": {
+    "description": "Relación N:M de usuarios y roles.",
+    "columns": [
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": false,
+        "description": "Usuario"
+      },
+      {
+        "name": "nIdRol",
+        "type": "int",
+        "nullable": false,
+        "description": "Rol"
+      }
+    ],
+    "pk": [
+      "nIdUsuario",
+      "nIdRol"
+    ]
+  },
+  "App.Tbl_UsuarioClaim": {
+    "description": "Claims de Usuario",
+    "columns": [
+      {
+        "name": "nIdUsuarioClaim",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador del claim"
+      },
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": false,
+        "description": "Titular"
+      },
+      {
+        "name": "cTipoClaim",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "ClaimType"
+      },
+      {
+        "name": "cValorClaim",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "ClaimValue"
+      }
+    ],
+    "pk": [
+      "nIdUsuarioClaim"
+    ]
+  },
+  "App.Tbl_RolClaim": {
+    "description": "Claims de Rol",
+    "columns": [
+      {
+        "name": "nIdRolClaim",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador del claim"
+      },
+      {
+        "name": "nIdRol",
+        "type": "int",
+        "nullable": false,
+        "description": "Titular"
+      },
+      {
+        "name": "cTipoClaim",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "ClaimType"
+      },
+      {
+        "name": "cValorClaim",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "ClaimValue"
+      }
+    ],
+    "pk": [
+      "nIdRolClaim"
+    ]
+  },
+  "App.Tbl_UsuarioLogin": {
+    "description": "Inicio de sesión externo de Identity.",
+    "columns": [
+      {
+        "name": "cProveedorLogin",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "LoginProvider"
+      },
+      {
+        "name": "cClaveProveedor",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "ProviderKey"
+      },
+      {
+        "name": "cNombreProveedor",
+        "type": "nvarchar(128)",
+        "nullable": true,
+        "description": "ProviderDisplayName"
+      },
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": false,
+        "description": "Usuario"
+      }
+    ],
+    "pk": [
+      "cProveedorLogin",
+      "cClaveProveedor"
+    ]
+  },
+  "App.Tbl_UsuarioToken": {
+    "description": "Tokens de Identity; evitar exposición y proteger en el backend.",
+    "columns": [
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": false,
+        "description": "Usuario"
+      },
+      {
+        "name": "cProveedorLogin",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "LoginProvider"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "Nombre del token"
+      },
+      {
+        "name": "cValor",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "description": "Valor"
+      }
+    ],
+    "pk": [
+      "nIdUsuario",
+      "cProveedorLogin",
+      "cNombre"
+    ]
+  },
+  "App.Tbl_Estudiante": {
+    "description": "Identidad académica independiente del plan.",
+    "columns": [
+      {
+        "name": "nIdEstudiante",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": false,
+        "description": "Usuario único"
+      },
+      {
+        "name": "cNumeroControl",
+        "type": "varchar(25)",
+        "nullable": false,
+        "description": "Número de control único"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdEstudiante"
+    ]
+  },
+  "App.Tbl_TrayectoriaEstudiante": {
+    "description": "Asignación temporal de retícula que conserva cambios de carrera.",
+    "columns": [
+      {
+        "name": "nIdTrayectoria",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdEstudiante",
+        "type": "int",
+        "nullable": false,
+        "description": "Estudiante"
+      },
+      {
+        "name": "nIdReticula",
+        "type": "int",
+        "nullable": false,
+        "description": "Plan; la carrera se obtiene de él"
+      },
+      {
+        "name": "nSemestreActual",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Semestre actual en el plan"
+      },
+      {
+        "name": "nLimiteCreditos",
+        "type": "smallint",
+        "nullable": false,
+        "description": "Máximo autorizado"
+      },
+      {
+        "name": "dFechaInicio",
+        "type": "date",
+        "nullable": false,
+        "description": "Inicio"
+      },
+      {
+        "name": "dFechaFin",
+        "type": "date",
+        "nullable": true,
+        "description": "Cierre; NULL indica vigente"
+      }
+    ],
+    "pk": [
+      "nIdTrayectoria"
+    ]
+  },
+  "App.Tbl_Docente": {
+    "description": "Perfil laboral; usuario opcional sin duplicar credenciales.",
+    "columns": [
+      {
+        "name": "nIdDocente",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": true,
+        "description": "Usuario opcional único"
+      },
+      {
+        "name": "cNumeroEmpleado",
+        "type": "varchar(25)",
+        "nullable": false,
+        "description": "Número de empleado único"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(150)",
+        "nullable": false,
+        "description": "Nombre del perfil laboral"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdDocente"
+    ]
+  },
+  "App.Tbl_Aula": {
+    "description": "Recurso físico de enseñanza.",
+    "columns": [
+      {
+        "name": "nIdAula",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdTipoAula",
+        "type": "int",
+        "nullable": false,
+        "description": "Tipo"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "nCapacidad",
+        "type": "smallint",
+        "nullable": false,
+        "description": "Capacidad positiva"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Habilitado"
+      }
+    ],
+    "pk": [
+      "nIdAula"
+    ]
+  },
+  "App.Tbl_ReticulaMateria": {
+    "description": "Atributos dependientes del par retícula-materia.",
+    "columns": [
+      {
+        "name": "nIdReticula",
+        "type": "int",
+        "nullable": false,
+        "description": "Plan"
+      },
+      {
+        "name": "nIdMateria",
+        "type": "int",
+        "nullable": false,
+        "description": "Materia"
+      },
+      {
+        "name": "nSemestreRecomendado",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Semestre recomendado"
+      },
+      {
+        "name": "nCreditos",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Créditos dentro del plan"
+      },
+      {
+        "name": "nObligatoria",
+        "type": "bit",
+        "nullable": false,
+        "description": "Obligatoria"
+      }
+    ],
+    "pk": [
+      "nIdReticula",
+      "nIdMateria"
+    ]
+  },
+  "App.Tbl_MateriaPrerrequisito": {
+    "description": "Arista del grafo de materias de una retícula.",
+    "columns": [
+      {
+        "name": "nIdReticula",
+        "type": "int",
+        "nullable": false,
+        "description": "Ámbito curricular"
+      },
+      {
+        "name": "nIdMateria",
+        "type": "int",
+        "nullable": false,
+        "description": "Materia objetivo"
+      },
+      {
+        "name": "nIdMateriaPrerrequisito",
+        "type": "int",
+        "nullable": false,
+        "description": "Materia antecedente; rol de FK a nIdMateria"
+      },
+      {
+        "name": "nObligatorio",
+        "type": "bit",
+        "nullable": false,
+        "description": "Obligatorio o recomendación"
+      }
+    ],
+    "pk": [
+      "nIdReticula",
+      "nIdMateria",
+      "nIdMateriaPrerrequisito"
+    ]
+  },
+  "App.Tbl_PeriodoAcademico": {
+    "description": "Ciclo y publicación de oferta.",
+    "columns": [
+      {
+        "name": "nIdPeriodo",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "cClave",
+        "type": "varchar(20)",
+        "nullable": false,
+        "description": "Clave única"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(100)",
+        "nullable": false,
+        "description": "Nombre"
+      },
+      {
+        "name": "dFechaInicio",
+        "type": "date",
+        "nullable": false,
+        "description": "Inicio"
+      },
+      {
+        "name": "dFechaFin",
+        "type": "date",
+        "nullable": false,
+        "description": "Fin"
+      },
+      {
+        "name": "nActivoGeneracion",
+        "type": "bit",
+        "nullable": false,
+        "description": "Único periodo para generación"
+      },
+      {
+        "name": "nOfertaPublicada",
+        "type": "bit",
+        "nullable": false,
+        "description": "Oferta validada y congelada"
+      }
+    ],
+    "pk": [
+      "nIdPeriodo"
+    ]
+  },
+  "App.Tbl_Grupo": {
+    "description": "Oferta de una materia por periodo.",
+    "columns": [
+      {
+        "name": "nIdGrupo",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdMateria",
+        "type": "int",
+        "nullable": false,
+        "description": "Materia"
+      },
+      {
+        "name": "nIdDocente",
+        "type": "int",
+        "nullable": true,
+        "description": "Docente; opcional en borrador"
+      },
+      {
+        "name": "nIdPeriodo",
+        "type": "int",
+        "nullable": false,
+        "description": "Periodo"
+      },
+      {
+        "name": "cClaveGrupo",
+        "type": "varchar(20)",
+        "nullable": false,
+        "description": "Clave de grupo"
+      },
+      {
+        "name": "nEstatus",
+        "type": "bit",
+        "nullable": false,
+        "description": "Grupo activo"
+      }
+    ],
+    "pk": [
+      "nIdGrupo"
+    ]
+  },
+  "App.Tbl_SesionGrupo": {
+    "description": "Una reunión semanal, intervalo [inicio, fin).",
+    "columns": [
+      {
+        "name": "nIdSesionGrupo",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdGrupo",
+        "type": "int",
+        "nullable": false,
+        "description": "Grupo"
+      },
+      {
+        "name": "nIdDiaSemana",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Día ISO"
+      },
+      {
+        "name": "nIdAula",
+        "type": "int",
+        "nullable": false,
+        "description": "Aula"
+      },
+      {
+        "name": "dHoraInicio",
+        "type": "time(0)",
+        "nullable": false,
+        "description": "Inicio"
+      },
+      {
+        "name": "dHoraFin",
+        "type": "time(0)",
+        "nullable": false,
+        "description": "Fin"
+      }
+    ],
+    "pk": [
+      "nIdSesionGrupo"
+    ]
+  },
+  "App.Tbl_HistorialAcademico": {
+    "description": "Un intento por estudiante/materia/periodo; admite recursamientos.",
+    "columns": [
+      {
+        "name": "nIdHistorialAcademico",
+        "type": "bigint IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdEstudiante",
+        "type": "int",
+        "nullable": false,
+        "description": "Estudiante"
+      },
+      {
+        "name": "nIdMateria",
+        "type": "int",
+        "nullable": false,
+        "description": "Materia"
+      },
+      {
+        "name": "nIdPeriodo",
+        "type": "int",
+        "nullable": true,
+        "description": "Periodo; NULL solo para PENDIENTE"
+      },
+      {
+        "name": "nIdEstatusAcademico",
+        "type": "tinyint",
+        "nullable": false,
+        "description": "Estado"
+      },
+      {
+        "name": "nCalificacion",
+        "type": "decimal(5,2)",
+        "nullable": true,
+        "description": "0 a 100; requerida en resultados finales"
+      },
+      {
+        "name": "dFechaRegistro",
+        "type": "datetime2(0)",
+        "nullable": false,
+        "description": "Registro UTC"
+      }
+    ],
+    "pk": [
+      "nIdHistorialAcademico"
+    ]
+  },
+  "App.Tbl_HorarioGenerado": {
+    "description": "Opción en borrador o confirmada para una trayectoria.",
+    "columns": [
+      {
+        "name": "nIdHorarioGenerado",
+        "type": "int IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdTrayectoria",
+        "type": "int",
+        "nullable": false,
+        "description": "Asignación curricular histórica"
+      },
+      {
+        "name": "nIdPeriodo",
+        "type": "int",
+        "nullable": false,
+        "description": "Periodo"
+      },
+      {
+        "name": "cNombre",
+        "type": "nvarchar(100)",
+        "nullable": false,
+        "description": "Nombre de opción"
+      },
+      {
+        "name": "nConfirmado",
+        "type": "bit",
+        "nullable": false,
+        "description": "Estado de flujo: borrador o confirmado inmutable"
+      },
+      {
+        "name": "nSeleccionado",
+        "type": "bit",
+        "nullable": false,
+        "description": "Opción final; máximo una por trayectoria/periodo"
+      },
+      {
+        "name": "dFechaRegistro",
+        "type": "datetime2(0)",
+        "nullable": false,
+        "description": "Registro UTC"
+      }
+    ],
+    "pk": [
+      "nIdHorarioGenerado"
+    ]
+  },
+  "App.Tbl_HorarioGeneradoDetalle": {
+    "description": "Un grupo por fila; sin atributos derivados.",
+    "columns": [
+      {
+        "name": "nIdHorarioGenerado",
+        "type": "int",
+        "nullable": false,
+        "description": "Cabecera"
+      },
+      {
+        "name": "nIdGrupo",
+        "type": "int",
+        "nullable": false,
+        "description": "Grupo"
+      }
+    ],
+    "pk": [
+      "nIdHorarioGenerado",
+      "nIdGrupo"
+    ]
+  },
+  "Aud.Tbl_Auditoria": {
+    "description": "Bitácora administrativa; sin payload sensible.",
+    "columns": [
+      {
+        "name": "nIdAuditoria",
+        "type": "bigint IDENTITY(1,1)",
+        "nullable": false,
+        "description": "Identificador"
+      },
+      {
+        "name": "nIdUsuario",
+        "type": "int",
+        "nullable": true,
+        "description": "Actor funcional cuando se conoce"
+      },
+      {
+        "name": "cLoginOriginal",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "ORIGINAL_LOGIN de SQL Server"
+      },
+      {
+        "name": "cOperacion",
+        "type": "varchar(30)",
+        "nullable": false,
+        "description": "Operación"
+      },
+      {
+        "name": "cEsquema",
+        "type": "varchar(3)",
+        "nullable": false,
+        "description": "Esquema afectado"
+      },
+      {
+        "name": "cObjeto",
+        "type": "nvarchar(128)",
+        "nullable": false,
+        "description": "Objeto afectado"
+      },
+      {
+        "name": "nIdRegistroAfectado",
+        "type": "bigint",
+        "nullable": true,
+        "description": "Clave simple si existe"
+      },
+      {
+        "name": "dFechaRegistro",
+        "type": "datetime2(0)",
+        "nullable": false,
+        "description": "Instante UTC"
+      },
+      {
+        "name": "cDatosAdicionales",
+        "type": "nvarchar(1000)",
+        "nullable": true,
+        "description": "Contexto mínimo sin secretos"
+      }
+    ],
+    "pk": [
+      "nIdAuditoria"
+    ]
+  }
+}

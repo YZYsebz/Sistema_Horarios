@@ -1,0 +1,210 @@
+[
+  {
+    "prueba": "GET /api/health -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Health real",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/materias -> 401",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/auth/login -> 401",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/auth/login -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/estudiantes/me -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Control numérico de ocho dígitos",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/estudiantes/me/materias-disponibles -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Cuatro materias de referencia disponibles",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/estudiantes/me/seleccion/creditos -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Créditos validados por servidor",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/estudiantes/me/seleccion/creditos -> 400",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/horarios/generar -> 400",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/horarios/generar -> 422",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/horarios/generar -> 422",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/horarios/generar -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Generador devuelve combinación completa",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/horarios -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/horarios -> 409",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/horarios -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Guardado inválido no deja cabecera parcial",
+    "correcta": true
+  },
+  {
+    "prueba": "PUT /api/horarios/120/seleccion -> 204",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/horarios -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Persistencia y selección exclusivas",
+    "correcta": true
+  },
+  {
+    "prueba": "PUT /api/horarios/67/seleccion -> 409",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/carreras -> 403",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/auth/login -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/estudiantes/me -> 403",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/grupos -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Docente consulta únicamente sus grupos",
+    "correcta": true
+  },
+  {
+    "prueba": "POST /api/auth/login -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/carreras -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo carreras con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/reticulas -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo reticulas con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/materias -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo materias con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/periodos -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo periodos con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/docentes -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo docentes con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/aulas -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo aulas con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/grupos -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo grupos con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/estudiantes -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo estudiantes con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /api/sesiones -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "Catálogo sesiones con datos reales de SQL",
+    "correcta": true
+  },
+  {
+    "prueba": "GET /swagger/v1/swagger.json -> 200",
+    "correcta": true
+  },
+  {
+    "prueba": "OpenAPI incluye generación y guardado",
+    "correcta": true
+  },
+  {
+    "prueba": "PUT /api/horarios/121/seleccion -> 204",
+    "correcta": true
+  }
+]
