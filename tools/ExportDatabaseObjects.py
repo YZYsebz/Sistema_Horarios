@@ -234,9 +234,9 @@ IF DB_ID(N'Bd_SistemaHorarios') IS NULL
     chunks['09_Seguridad_sin_credenciales.sql'] = security
     note = '/* Schema-only export. No table rows, passwords, login hashes or physical server paths. */\n'
     for name, content in chunks.items():
-        (DEST / name).write_text(note + content, encoding='utf-8-sig')
+        (DEST / name).write_text(note + content, encoding='utf-8-sig', newline='\n')
     combined = note + '\n'.join('/* SOURCE: ' + name + ' */\n' + text for name,text in chunks.items())
-    (DEST / '00_Instalacion_completa.sql').write_text(combined, encoding='utf-8-sig')
+    (DEST / '00_Instalacion_completa.sql').write_text(combined, encoding='utf-8-sig', newline='\n')
     counts = {
         'tablas': len(data['tables']), 'tipos_tabla': len(data['table_types']),
         'vistas': sum(m['type'].strip() == 'V' for m in data['modules']),

@@ -21,43 +21,43 @@
   "archivos": [
     {
       "archivo": "00_Instalacion_completa.sql",
-      "sha256": "d5b774575ec9a10c81295f27e2e47f662c546683e883eec93bd818480d21e538"
+      "sha256": "ff0ea911cc2b467bf1f1c4354dba5b86f3c5b62d4b958ce7b4fb9ece47c0325c"
     },
     {
       "archivo": "01_Base_y_esquemas.sql",
-      "sha256": "d5c8348eb5196779684c65d1a3e8662a365d72e57f8a2b7691ebca34457eb064"
+      "sha256": "21dfa7cae0060add437aa9f51a69c7a9d5aed6729e52dad9c1e5e4cfd3b2a618"
     },
     {
       "archivo": "02_Tipos_tabla.sql",
-      "sha256": "23339541305523fd6bc56dd9b3a112a988ddc365fcaa079adddedca9700a65e7"
+      "sha256": "f05478b0cb9bcd11777de22c6931dda50653879375e98b0538de30c50cd3c1be"
     },
     {
       "archivo": "03_Tablas_y_restricciones.sql",
-      "sha256": "566a45def5301cc753ffdc27eea4698e9d8093838b98c0267a7770f3cabdfa58"
+      "sha256": "6168c4ade6db610821a0cf132db92d28c453e0d36c50bde2d33acff4238109e6"
     },
     {
       "archivo": "04_Indices.sql",
-      "sha256": "37e28461db26e39bdaf67ea8e615c759c6ed2db86e59b9c6a488d7983bfc601a"
+      "sha256": "fc0353ba62f59f1a39d175900d40ae35f762af6b52459fc381351262d198bd2b"
     },
     {
       "archivo": "05_Claves_foraneas.sql",
-      "sha256": "a69b9adac3da5ac2fcafab49c20a876b47acf4554c181a117d0e0263ad971d32"
+      "sha256": "a946098b51b367b1b54c93af3a1afa9e895154be02b61785d50aefddd53594d3"
     },
     {
       "archivo": "06_Vistas_y_funciones.sql",
-      "sha256": "bacfd12fdfd48e3cfcb42a488e27d01526a7e20f27198ba3bf07931b8a517b29"
+      "sha256": "6cbe97d59b3f482d49fcaafb03f635dba0da0c2b68fb0b618133cb11e8070c25"
     },
     {
       "archivo": "07_Procedimientos.sql",
-      "sha256": "5c9f68f733b6851be828332e4a4833ea173ebaf55f4677ba149389ff482ca51b"
+      "sha256": "ff7de74e5194faa184e6458bf6aa749641c4901bf024c2982403246afe0432f1"
     },
     {
       "archivo": "08_Triggers.sql",
-      "sha256": "456b084d2e4ee0fe434125783b39b0bd0f0443356917c09a4661f95c37e6e3f5"
+      "sha256": "26c90520ba35f2af087fb79b2ff6b98ca1edfb9cca5cf791dcd444e5bec59d6c"
     },
     {
       "archivo": "09_Seguridad_sin_credenciales.sql",
-      "sha256": "827c02573ba7a10ad708c91b865a255d7053b58e8b16652cd79120d784ab37c8"
+      "sha256": "ea0ba9b2f4282eee579b51516c0e406075511dff35cf124e6769d06118ca14db"
     }
   ]
 }

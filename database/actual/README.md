@@ -29,7 +29,7 @@ Exportación de metadatos de los esquemas App, Rep y Aud. Las definiciones de pr
 8. `08_Triggers.sql`: los dieciocho triggers de integridad.
 9. `09_Seguridad_sin_credenciales.sql`: rol runtime, usuario sin login, permisos App, lectura de Rep, denegación de Aud y REFERENCES sobre el TVP.
 
-`Inventario_objetos.json` contiene los metadatos de origen. `Manifiesto_exportacion.json` identifica los archivos SQL mediante SHA-256. `Validacion_sintaxis.json` registra el análisis de los diez archivos mediante el parser oficial ScriptDom de Microsoft.
+`Inventario_objetos.json` contiene los metadatos de origen. `Manifiesto_exportacion.json` identifica los archivos SQL mediante SHA-256. Los SQL se guardan como UTF-8 con BOM y saltos LF; `.gitattributes` conserva ese formato al clonarlos en cualquier plataforma para que los hashes sean reproducibles. `Validacion_sintaxis.json` registra el análisis de los diez archivos mediante el parser oficial ScriptDom de Microsoft.
 
 ## Instalación en una base nueva
 
